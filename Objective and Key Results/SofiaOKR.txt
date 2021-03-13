@@ -1,0 +1,11 @@
+﻿Objectives and key results:
+* Bullets: (est 9+hrs)
+   * Limited destructive bullets: --Saturday by 9pm (est.1hr)
+   * Causing damage to ghosts: --Monday by 11pm (est. 3+hrs)
+   * Limitless paintball bullets(generic looking, no paint yet)--Saturday by 8pm (est 1hr)
+   * Spawn/reload ammo (4+hrs)
+
+
+* Ghost interaction with magical gun player (est. 4+hrs)
+   * Health Bar: -- Tuesday by 8pm (est. 2+hrs)
+   * Damage taken: 2+hrs --Tuesday by 2pm (est. 2+hrs)
