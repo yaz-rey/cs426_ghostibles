@@ -904,3 +904,83 @@ Received Import Request.
 Start importing Assets/Prefab/Gem.prefab using Guid(c769e678c21694aefb8fe6290b3a3e0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98fe297dc3f3cef1f45226c48f897d0') in 0.034159 seconds
   Import took 0.036929 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 475.756219 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(18e66abb2edd840e8bc24c43c8375707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(18e66abb2edd840e8bc24c43c8375707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4699314250edd025284917d47fe06178') in 0.002920 seconds
+  Import took 0.027347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.983091 seconds.
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(7699c420a6d724159a5676cac93fe1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(7699c420a6d724159a5676cac93fe1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb11c3f852041344aa4c77f9795f8d00') in 0.032320 seconds
+  Import took 0.034533 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000507 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.203 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.8 MB.
+System memory in use after: 139.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1645.
+Total: 1.952048 ms (FindLiveObjects: 0.323194 ms CreateObjectMapping: 0.080756 ms MarkObjects: 1.486583 ms  DeleteObjects: 0.059736 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 181.712791 seconds.
+  path: Assets/Scripts/MusicMovement.cs
+  artifactKey: Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MusicMovement.cs using Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b503a70bf08c2177714d21730fb4dd') in 0.020325 seconds
+  Import took 0.024897 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000421 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.900 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.2 MB.
+System memory in use after: 140.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1647.
+Total: 3.236576 ms (FindLiveObjects: 0.385448 ms CreateObjectMapping: 0.090197 ms MarkObjects: 2.647966 ms  DeleteObjects: 0.110467 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 292.414736 seconds.
+  path: Assets/Scripts/MusicMovement.cs
+  artifactKey: Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MusicMovement.cs using Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc50088a8c0666d94a94f2bf6b1fa0bd') in 0.015019 seconds
+  Import took 0.019892 seconds .
+

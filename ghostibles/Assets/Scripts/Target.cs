@@ -24,6 +24,12 @@ public class Target : MonoBehaviour
     	}
     }
 
+    // https://docs.unity3d.com/ScriptReference/Color.html
+    private void ChangeColor(){
+        GetComponent<MeshRenderer>().material.color = Color.yellow;
+
+    }
+
     //this method is called whenever a collision is detected
     private void OnCollisionEnter(Collision collision) {
     	// check attack 

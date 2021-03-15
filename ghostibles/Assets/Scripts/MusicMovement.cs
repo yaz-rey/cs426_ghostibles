@@ -64,6 +64,8 @@ public class MusicMovement : MonoBehaviour
             GetComponent<MeshRenderer>().material.color = Color.red;
         }
 
+        CheckGhosts(transform.position, 2);
+
     }
     // https://answers.unity.com/questions/862880/disable-jumping-more-than-once.html
     // Used tag to identity different grounds in which to allow jumping 
@@ -76,6 +78,20 @@ public class MusicMovement : MonoBehaviour
             if (health > 0){
                 health = health - 10;
             }
+        }
+    }
+
+    // https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html
+    void CheckGhosts(Vector3 center, float radius)
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(center, radius);
+        foreach (var hitCollider in hitColliders)
+        {
+            if (hitCollider.gameObject.tag == "Target"){
+                // https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html
+                hitCollider.SendMessage("ChangeColor");
+            }
+            
         }
     }
 }
