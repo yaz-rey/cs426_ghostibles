@@ -18,16 +18,26 @@ public class Target : MonoBehaviour
             GetComponent<MeshRenderer>().material.color = Color.red;
     		// Destroy(gameObject);
     	}
-    	if (immunity == 0){
+    	/*if (immunity == 0){
             GetComponent<MeshRenderer>().material.color = Color.cyan;
     		// Destroy(gameObject);
-    	}
+    	}*/
     }
 
     // https://docs.unity3d.com/ScriptReference/Color.html
-    private void ChangeColor(){
-        GetComponent<MeshRenderer>().material.color = Color.yellow;
-
+    private void DecreaseImmunity(){
+        if (immunity > 0){
+            immunity = immunity - 10;
+        }
+        if (immunity == 20){
+            GetComponent<MeshRenderer>().material.color = Color.yellow;
+        }
+        if (immunity == 10){
+            GetComponent<MeshRenderer>().material.color = Color.blue;
+        }
+        if (immunity == 0){
+            GetComponent<MeshRenderer>().material.color = Color.black;
+        }
     }
 
     //this method is called whenever a collision is detected

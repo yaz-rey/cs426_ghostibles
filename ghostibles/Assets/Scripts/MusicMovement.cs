@@ -14,6 +14,9 @@ public class MusicMovement : MonoBehaviour
     public int maxJumps = 1;
 
     public int health = 30;
+    public float attackInterval = 2;
+
+    private bool attack = false;
 
     public GameObject cannon;
     public GameObject bullet;
@@ -53,23 +56,56 @@ public class MusicMovement : MonoBehaviour
 
         }
 
-        // https://docs.unity3d.com/ScriptReference/Input.html
+        // https://answers.unity.com/questions/797799/help-with-on-off-toggle-c.html
+        if (Input.GetKeyDown(KeyCode.L)){
+            if(attack){
+                // disable attack
+                Debug.Log("Disabled Attack");
+                attack = false;
+            }
+            else{
+                // enable attack
+                Debug.Log("Enabled Attack");
+                attack = true; 
+            }
+        
+        }
+
+        if (attack){
+            // check time 
+            if (attackInterval > 0){
+                attackInterval -= Time.deltaTime;
+                Debug.Log("Changing time: " + attackInterval);
+
+            }
+            // once interval over, decrease immunity for ghost
+            else{
+                Debug.Log("2 seconds elapsed - attack ghosts");
+                CheckGhosts(transform.position, 2);
+                attackInterval = 2;
+            }
+        }
+        
+
+        /*// https://docs.unity3d.com/ScriptReference/Input.html
         if (Input.GetButtonDown("Fire1")){
             GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
             newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 2;
             newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
-        }
+        }*/
 
         if (health == 0){
             GetComponent<MeshRenderer>().material.color = Color.red;
         }
+        // press a button
+        // time - for every two seconds remove 10 immunity 
 
-        CheckGhosts(transform.position, 2);
 
     }
     // https://answers.unity.com/questions/862880/disable-jumping-more-than-once.html
     // Used tag to identity different grounds in which to allow jumping 
     // Limiting jumping more than once 
+    // NOT IN USE
     private void OnCollisionEnter(Collision collision){
         if (collision.gameObject.tag == "AllowJump"){
             jumpCount = maxJumps;
@@ -89,7 +125,7 @@ public class MusicMovement : MonoBehaviour
         {
             if (hitCollider.gameObject.tag == "Target"){
                 // https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html
-                hitCollider.SendMessage("ChangeColor");
+                hitCollider.SendMessage("DecreaseImmunity");
             }
             
         }
