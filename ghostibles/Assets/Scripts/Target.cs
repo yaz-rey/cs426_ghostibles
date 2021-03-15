@@ -15,10 +15,12 @@ public class Target : MonoBehaviour
     // check when to destroy objects 
     private void Update(){
     	if (health == 0){
-    		Destroy(gameObject);
+            GetComponent<MeshRenderer>().material.color = Color.red;
+    		// Destroy(gameObject);
     	}
     	if (immunity == 0){
-    		Destroy(gameObject);
+            GetComponent<MeshRenderer>().material.color = Color.cyan;
+    		// Destroy(gameObject);
     	}
     }
 
