@@ -7,8 +7,8 @@ using UnityEngine;
 // MonoBehavior is the base class from which every Unity Script Derives
 public class MusicMovement : MonoBehaviour
 {
-    public float speed = 25.0f;
-    public float rotationSpeed = 90;
+    public float speed = 50.0f;
+    public float rotationSpeed = 100;
     public float force = 700f;
     public int jumpCount = 0; 
     public int maxJumps = 1;
@@ -96,6 +96,7 @@ public class MusicMovement : MonoBehaviour
 
         if (health == 0){
             GetComponent<MeshRenderer>().material.color = Color.red;
+            Destroy(gameObject);
         }
         // press a button
         // time - for every two seconds remove 10 immunity 

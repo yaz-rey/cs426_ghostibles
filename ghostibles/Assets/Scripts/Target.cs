@@ -22,6 +22,7 @@ public class Target : MonoBehaviour
             GetComponent<MeshRenderer>().material.color = Color.cyan;
     		// Destroy(gameObject);
     	}*/
+
     }
 
     // https://docs.unity3d.com/ScriptReference/Color.html
@@ -37,6 +38,7 @@ public class Target : MonoBehaviour
         }
         if (immunity == 0){
             GetComponent<MeshRenderer>().material.color = Color.black;
+            Destroy(gameObject);
         }
     }
 
@@ -54,5 +56,7 @@ public class Target : MonoBehaviour
         	}
         	
         }
+
+        //DecreaseImmunity();
     }
 }
