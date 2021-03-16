@@ -1,0 +1,22 @@
+
+Week 10:
+* construct ghost enemy -- Sun by 8pm (estimate: 2 hours)
+  * script to counter collisions / change health
+  * create pretermined areas
+* construct magic player -- Sun by 10pm (estimate: 2 hours)
+  * script to move / counter collisions / damage ghosts
+  * start area
+
+(to expand upon)
+Week 11:
+* construct mecanim for music player -- Fri by 12pm (estimate: 2 hours)
+* construct secondary weapon & physics for secondary weapon -- Fri by 3pm (estimate: 3 hours)
+* contribute to UI with sound effects to player moves -- Fri by 7 pm (estimate: 2 hours)
+
+Week 12:
+* incorporate AI to spawn ghost enemies -- Fri by 5pm (estimate: 4 hours)
+* improve on sound design -- Fri by 9pm (estimate: 2 hours)
+
+Week 13:
+* implement shader construct -- Fri by 6pm (estimate: 2 hours)
+* implement introduction to game writing sequence -- Fri by 10pm (4 hours)
