@@ -12,68 +12,79 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59582
+59825
 Successfully changed project path to: /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles
 /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 26.74 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 25.55 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Assets
 GfxDevice: creating device client; threaded=0
-2021-03-16 13:53:55.028 Unity[6067:6338562] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
-2021-03-16 13:53:55.028 Unity[6067:6338562] Metal devices available: 1
-2021-03-16 13:53:55.028 Unity[6067:6338562] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
-2021-03-16 13:53:55.028 Unity[6067:6338562] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-03-16 14:07:01.277 Unity[6427:6348669] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-03-16 14:07:01.277 Unity[6427:6348669] Metal devices available: 1
+2021-03-16 14:07:01.277 Unity[6427:6348669] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-03-16 14:07:01.277 Unity[6427:6348669] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
 Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 645
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56067
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56427
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.2f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005982 seconds.
+Registered in 0.005045 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 22.77 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 25.63 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.986 seconds
+- Completed reload, in  1.960 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001205 seconds.
+Registered in 0.001664 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0x7f9eeeb96000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e35000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eee0e4200 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e35000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef2597000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e35000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef2597000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e35000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6e000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef31e3600 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eee0e9a00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef2d66000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.025 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.6 MB.
+System memory in use after: 109.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1545.
+Total: 2.756607 ms (FindLiveObjects: 0.217373 ms CreateObjectMapping: 0.092099 ms MarkObjects: 2.341663 ms  DeleteObjects: 0.103932 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/MusicMovement.cs
+  artifactKey: Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MusicMovement.cs using Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ce6dfd137d76b97ce6f78170163059') in 0.323958 seconds
+  Import took 0.327259 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000424 seconds.
+Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.23 ms, found 1 plugins.
@@ -82,433 +93,14 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.067 seconds
+- Completed reload, in  0.915 seconds
 Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launching external process: /Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1103 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.6 MB.
-System memory in use after: 108.7 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1545.
-Total: 2.416342 ms (FindLiveObjects: 0.181833 ms CreateObjectMapping: 0.046022 ms MarkObjects: 2.082847 ms  DeleteObjects: 0.104293 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/MusicMovement.cs
-  artifactKey: Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MusicMovement.cs using Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41237b5abd1c2dc7ca634175c350ed05') in 0.336753 seconds
-  Import took 0.341007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(865a46023eed74d5d96008499e3f3abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(865a46023eed74d5d96008499e3f3abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0530f72dd9b1f15cc427549b51d21c') in 0.000750 seconds
-  Import took 0.003053 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000377 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0x7f9eedaa7e00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e57000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef3119200 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eed10b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef2500000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6e000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef2500000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6e000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6e000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eedaaaa00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eedab0e00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef257d000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.892 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.21 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 113.4 MB.
-System memory in use after: 113.5 MB.
+System memory in use before: 114.5 MB.
+System memory in use after: 114.6 MB.
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1547.
-Total: 1.707734 ms (FindLiveObjects: 0.204471 ms CreateObjectMapping: 0.042797 ms MarkObjects: 1.365023 ms  DeleteObjects: 0.094171 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 48.700578 seconds.
-  path: Assets/Scripts/MusicMovement.cs
-  artifactKey: Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MusicMovement.cs using Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63663fb3ab97ac559d35cb727be28bb5') in 0.009093 seconds
-  Import took 0.011666 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.415838 seconds.
-  path: Assets/Prefab
-  artifactKey: Guid(797c5d9959fd24fc1836acc26a641c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab using Guid(797c5d9959fd24fc1836acc26a641c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4adf3bb341149d1ca97bc3e4c5bd99e4') in 0.001735 seconds
-  Import took 0.005092 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000706 seconds.
-  path: Assets/Prefab
-  artifactKey: Guid(797c5d9959fd24fc1836acc26a641c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab using Guid(797c5d9959fd24fc1836acc26a641c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4adf3bb341149d1ca97bc3e4c5bd99e4') in 0.002304 seconds
-  Import took 0.006278 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.061423 seconds.
-  path: Assets/Prefab/Gem.prefab
-  artifactKey: Guid(c769e678c21694aefb8fe6290b3a3e0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Gem.prefab using Guid(c769e678c21694aefb8fe6290b3a3e0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98fe297dc3f3cef1f45226c48f897d0') in 0.357277 seconds
-  Import took 0.359849 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Prefab/Ghost.prefab
-  artifactKey: Guid(49b4cd278bad54d70a493d4512fa2e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Ghost.prefab using Guid(49b4cd278bad54d70a493d4512fa2e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99eb6fb44845b01f041f7ae7ad6036f3') in 0.007905 seconds
-  Import took 0.009827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Prefab/MusicPlayer.prefab
-  artifactKey: Guid(074b2128fbdf84e349dcc15d967ad85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/MusicPlayer.prefab using Guid(074b2128fbdf84e349dcc15d967ad85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac1e003b8ad0b9c505eb5fdfb4585bfd') in 0.012070 seconds
-  Import took 0.014085 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.059835 seconds.
-  path: Assets/Prefab/MusicPlayer.prefab
-  artifactKey: Guid(074b2128fbdf84e349dcc15d967ad85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/MusicPlayer.prefab using Guid(074b2128fbdf84e349dcc15d967ad85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ebc985ee9266b82cac16e9d83e24a69') in 0.016195 seconds
-  Import took 0.018930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 73.588699 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(18e66abb2edd840e8bc24c43c8375707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(18e66abb2edd840e8bc24c43c8375707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4699314250edd025284917d47fe06178') in 0.004842 seconds
-  Import took 0.008604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.343772 seconds.
-  path: Assets/Materials
-  artifactKey: Guid(740e2607b8ebf634b9f2c2651cb765e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials using Guid(740e2607b8ebf634b9f2c2651cb765e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b4e7104943a241a2a719a68295c3e0e') in 0.002705 seconds
-  Import took 0.005577 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002425 seconds.
-  path: Assets/Materials
-  artifactKey: Guid(740e2607b8ebf634b9f2c2651cb765e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials using Guid(740e2607b8ebf634b9f2c2651cb765e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b4e7104943a241a2a719a68295c3e0e') in 0.002541 seconds
-  Import took 0.010918 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.075516 seconds.
-  path: Assets/Materials/Face.mat
-  artifactKey: Guid(51ddc4a7debe94672a491273f47851d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Face.mat using Guid(51ddc4a7debe94672a491273f47851d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8a9ea41c438fc6ce72e561ba81791a') in 0.217066 seconds
-  Import took 0.220305 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Materials/smile.jpg
-  artifactKey: Guid(c3c5d5c3776ff4deb91dc2661a5f93ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/smile.jpg using Guid(c3c5d5c3776ff4deb91dc2661a5f93ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95222a5adbb6fc70d3e6c3221ad0a18') in 0.469244 seconds
-  Import took 0.471053 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Materials/New Material.mat
-  artifactKey: Guid(7699c420a6d724159a5676cac93fe1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/New Material.mat using Guid(7699c420a6d724159a5676cac93fe1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb11c3f852041344aa4c77f9795f8d00') in 0.009688 seconds
-  Import took 0.011710 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000397 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0x7f9eeddeba00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e45000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eeddeee00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eed75b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef2500000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eed75b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef2500000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eed75b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eed75b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eeddf0600 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eeddd1a00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef2d66000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.887 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.20 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 130.4 MB.
-System memory in use after: 130.4 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1593.
-Total: 1.651353 ms (FindLiveObjects: 0.148988 ms CreateObjectMapping: 0.035215 ms MarkObjects: 1.411797 ms  DeleteObjects: 0.054167 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001184 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0x7f9eecee2e00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eed749000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eecf53e00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e59000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef2597000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e59000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef2597000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e59000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e59000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eeee2e000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eeeba0400 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef257d000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.943 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.1 MB.
-System memory in use after: 131.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1595.
-Total: 2.522217 ms (FindLiveObjects: 0.232891 ms CreateObjectMapping: 0.054084 ms MarkObjects: 2.163687 ms  DeleteObjects: 0.070066 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 88.020627 seconds.
-  path: Assets/Scripts/Target.cs
-  artifactKey: Guid(d802466bb97014830ab770ef30645a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Target.cs using Guid(d802466bb97014830ab770ef30645a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec68a02707133fe1a4c7561b361e8e31') in 0.006690 seconds
-  Import took 0.010620 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000395 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0x7f9eeeb13800 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e92000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eedf84000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef25a1000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef25a1000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef321c000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef3222c00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef25e2000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.979 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.19 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.7 MB.
-System memory in use after: 131.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1597.
-Total: 1.561377 ms (FindLiveObjects: 0.146330 ms CreateObjectMapping: 0.035895 ms MarkObjects: 1.335639 ms  DeleteObjects: 0.042360 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001780 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0x7f9ef3081800 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e59000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef3084c00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eed75d000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef25a1000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e02000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef25a1000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e02000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e02000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eedcc7200 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef3085c00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef25e2000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.941 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.20 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.3 MB.
-System memory in use after: 131.4 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1599.
-Total: 1.660014 ms (FindLiveObjects: 0.163051 ms CreateObjectMapping: 0.037324 ms MarkObjects: 1.416529 ms  DeleteObjects: 0.041873 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000377 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0x7f9ef42cf600 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e92000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef42d2a00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9eed75d000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef25a1000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef25a1000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef1e6b000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef42d4200 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef42dae00 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x7f9ef25e2000 doesn't match image /Users/nice/Documents/GitHub/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.922 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.18 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.9 MB.
-System memory in use after: 131.9 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1601.
-Total: 2.308109 ms (FindLiveObjects: 0.311589 ms CreateObjectMapping: 0.064622 ms MarkObjects: 1.870326 ms  DeleteObjects: 0.059790 ms)
+Total: 1.793586 ms (FindLiveObjects: 0.202977 ms CreateObjectMapping: 0.054042 ms MarkObjects: 1.475622 ms  DeleteObjects: 0.059305 ms)
 

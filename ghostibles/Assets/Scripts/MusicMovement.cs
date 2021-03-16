@@ -88,7 +88,15 @@ public class MusicMovement : MonoBehaviour
             }
         }
         else{
-            GetComponent<MeshRenderer>().material.color = Color.white;
+            if (health == 30){
+                GetComponent<MeshRenderer>().material.color = Color.white;
+            }
+            if(health == 20){
+                GetComponent<MeshRenderer>().material.color = Color.yellow;
+            }
+            if(health == 10){
+                GetComponent<MeshRenderer>().material.color = Color.red;
+            }
         }
         
 
@@ -98,12 +106,7 @@ public class MusicMovement : MonoBehaviour
             newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 2;
             newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
         }*/
-        if(health == 20){
-            GetComponent<MeshRenderer>().material.color = Color.yellow;
-        }
-        if(health == 10){
-            GetComponent<MeshRenderer>().material.color = Color.red;
-        }
+        
         if (health == 0){
             Destroy(gameObject);
         }
