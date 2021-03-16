@@ -1,0 +1,927 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.804; Version 2009; 64bit' Language: 'en' Physical Memory: 32677 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/omarf/Unity Projects/cs426_ghostibles/ghostibles
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58322
+Successfully changed project path to: C:/Users/omarf/Unity Projects/cs426_ghostibles/ghostibles
+C:/Users/omarf/Unity Projects/cs426_ghostibles/ghostibles
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 20.03 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/omarf/Unity Projects/cs426_ghostibles/ghostibles/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 5700 XT (ID=0x731f)
+    Vendor:   
+    VRAM:     8148 MB
+    Driver:   27.20.1020.1
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56568
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001875 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 20.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.854 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000560 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C7AC650 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4A2050 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169781A2130 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C3475B0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A5E0080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C3475B0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A9AD010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C3475B0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A60DE90 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169785E9BD0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.623 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.2 MB.
+System memory in use after: 57.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1545.
+Total: 1.380000 ms (FindLiveObjects: 0.135200 ms CreateObjectMapping: 0.023700 ms MarkObjects: 1.158000 ms  DeleteObjects: 0.061900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefab/GameObject.prefab
+  artifactKey: Guid(7b2f45ec836d8c647b9215815afea2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/GameObject.prefab using Guid(7b2f45ec836d8c647b9215815afea2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f2c3081c9b5ae835b4c47b7fadd0cf') in 0.046338 seconds
+  Import took 0.048009 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000542 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697B1DD020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169782F9020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4A2050 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AE1A040 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4A2050 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D7C00E0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4A2050 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4A2050 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169782F9020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.582 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.3 MB.
+System memory in use after: 57.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1547.
+Total: 1.554000 ms (FindLiveObjects: 0.195900 ms CreateObjectMapping: 0.025200 ms MarkObjects: 1.283400 ms  DeleteObjects: 0.048700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000513 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697830E2B0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AADBE40 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A818FA0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AADBE40 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AE1A040 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AADBE40 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D7C00E0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AADBE40 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978136030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D295030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.579 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.5 MB.
+System memory in use after: 57.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1549.
+Total: 1.739400 ms (FindLiveObjects: 0.178000 ms CreateObjectMapping: 0.028000 ms MarkObjects: 1.474900 ms  DeleteObjects: 0.057300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1340.660889 seconds.
+  path: Assets/Scripts/MusicMovement.cs
+  artifactKey: Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MusicMovement.cs using Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c406a080c37209c4021c1f05857a0c40') in 0.015856 seconds
+  Import took 0.017646 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000600 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CE14010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A818FA0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4ABE80 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A622410 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4ABE80 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D7C00E0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4ABE80 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697BE2E010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169782F9020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.583 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1551.
+Total: 1.498700 ms (FindLiveObjects: 0.124600 ms CreateObjectMapping: 0.024300 ms MarkObjects: 1.307600 ms  DeleteObjects: 0.041400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000591 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697814BC50 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978389020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A818FA0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4ABE80 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A5E0080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4ABE80 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C550010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4ABE80 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D954010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169782F9020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.593 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.9 MB.
+System memory in use after: 58.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1553.
+Total: 1.404000 ms (FindLiveObjects: 0.141100 ms CreateObjectMapping: 0.023900 ms MarkObjects: 1.199400 ms  DeleteObjects: 0.038700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000600 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978389020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169782F9020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C4A2050 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C3133A0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697BF4E010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C550010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697BF4E010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697BD8F090 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169782F9020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.603 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.0 MB.
+System memory in use after: 58.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1555.
+Total: 1.627700 ms (FindLiveObjects: 0.177300 ms CreateObjectMapping: 0.024700 ms MarkObjects: 1.386900 ms  DeleteObjects: 0.037800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000632 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169782F9020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978363440 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CCB4020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C550010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978363440 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E0E00E0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169782F9020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.593 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.2 MB.
+System memory in use after: 58.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1557.
+Total: 1.988400 ms (FindLiveObjects: 0.286700 ms CreateObjectMapping: 0.043600 ms MarkObjects: 1.595100 ms  DeleteObjects: 0.061400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000617 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697814BC50 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CE14010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D295030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C22B010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E5560A0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CE14010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C550010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CE14010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E0E00E0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D295030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.597 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.4 MB.
+System memory in use after: 58.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1559.
+Total: 1.482100 ms (FindLiveObjects: 0.146700 ms CreateObjectMapping: 0.024300 ms MarkObjects: 1.261300 ms  DeleteObjects: 0.048700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000578 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697A65C260 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A818FA0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E2C0E10 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C550010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E46E040 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D295030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.577 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.6 MB.
+System memory in use after: 58.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1561.
+Total: 1.352200 ms (FindLiveObjects: 0.138900 ms CreateObjectMapping: 0.025900 ms MarkObjects: 1.150000 ms  DeleteObjects: 0.036500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000628 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E7D4010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D295030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E90C010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699EB2F020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E90C010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697ACD0010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E90C010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E7A0080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D295030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.585 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.8 MB.
+System memory in use after: 58.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1563.
+Total: 1.605400 ms (FindLiveObjects: 0.139500 ms CreateObjectMapping: 0.025700 ms MarkObjects: 1.390900 ms  DeleteObjects: 0.048200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000576 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A818FA0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169785B5010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AD9E020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697ACD0010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697BF4E010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E7A0080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D295030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.576 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.0 MB.
+System memory in use after: 59.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1565.
+Total: 1.668700 ms (FindLiveObjects: 0.157500 ms CreateObjectMapping: 0.024400 ms MarkObjects: 1.438800 ms  DeleteObjects: 0.047000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000572 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978389020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697B1B9080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A652430 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AD9E020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E90C010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E2C8E20 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A652430 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E0E00E0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697B1B9080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.576 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.0 MB.
+System memory in use after: 59.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1567.
+Total: 1.666500 ms (FindLiveObjects: 0.143200 ms CreateObjectMapping: 0.023800 ms MarkObjects: 1.449800 ms  DeleteObjects: 0.048400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000528 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697B1B9080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CD1E030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AD9E020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CD1E030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697ACD0010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CD1E030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E7A0080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697B1B9080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.575 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.3 MB.
+System memory in use after: 58.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1569.
+Total: 1.565900 ms (FindLiveObjects: 0.136300 ms CreateObjectMapping: 0.024200 ms MarkObjects: 1.361700 ms  DeleteObjects: 0.042600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000531 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697814BC50 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E8EA070 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978193490 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978363440 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AD9E020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E8EA070 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E2C8E20 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E3AE020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E7A0080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978193490 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.582 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.5 MB.
+System memory in use after: 58.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1571.
+Total: 1.578200 ms (FindLiveObjects: 0.131200 ms CreateObjectMapping: 0.022700 ms MarkObjects: 1.376100 ms  DeleteObjects: 0.047100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000570 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A818FA0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D24B030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AD9E020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CD1E030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AF4D040 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D24B030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E7A0080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978193490 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.686 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.7 MB.
+System memory in use after: 58.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1573.
+Total: 1.342500 ms (FindLiveObjects: 0.148500 ms CreateObjectMapping: 0.025300 ms MarkObjects: 1.130700 ms  DeleteObjects: 0.037300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000548 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697814BC50 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D3613A0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699F090090 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699EE3D0F0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699F14AD10 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699F090090 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E7A0080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978193490 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.580 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.8 MB.
+System memory in use after: 58.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1575.
+Total: 1.331700 ms (FindLiveObjects: 0.150800 ms CreateObjectMapping: 0.023700 ms MarkObjects: 1.120800 ms  DeleteObjects: 0.035100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000564 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699E914020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699EF23DA0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699EE3D0F0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CD1E030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697ACD0010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699EF23DA0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699EB27030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169782F9020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.577 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.0 MB.
+System memory in use after: 59.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1577.
+Total: 1.576300 ms (FindLiveObjects: 0.158600 ms CreateObjectMapping: 0.025100 ms MarkObjects: 1.351000 ms  DeleteObjects: 0.040400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000510 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001699F099EC0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978193490 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A652430 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699F14AD10 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CD1E030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697ACD0010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A652430 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000169785D71B0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978193490 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.577 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.1 MB.
+System memory in use after: 59.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1579.
+Total: 1.575200 ms (FindLiveObjects: 0.153600 ms CreateObjectMapping: 0.026500 ms MarkObjects: 1.318000 ms  DeleteObjects: 0.076400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000596 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697C0917C0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978193490 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699F090090 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699EA21030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697CD1E030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699F28D090 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699F090090 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699F03F010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978193490 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.577 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.4 MB.
+System memory in use after: 58.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1581.
+Total: 1.393500 ms (FindLiveObjects: 0.130500 ms CreateObjectMapping: 0.024200 ms MarkObjects: 1.197300 ms  DeleteObjects: 0.040900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000516 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001697830E2B0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697C63E080 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D3613A0 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697D24B030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697AD9E020 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699F051430 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697ACD0010 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001697A652430 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001699F4AE030 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016978193490 doesn't match image C:\Users\omarf\Unity Projects\cs426_ghostibles\ghostibles\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.577 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.6 MB.
+System memory in use after: 58.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1583.
+Total: 1.332000 ms (FindLiveObjects: 0.151800 ms CreateObjectMapping: 0.024000 ms MarkObjects: 1.123400 ms  DeleteObjects: 0.032300 ms)
+
