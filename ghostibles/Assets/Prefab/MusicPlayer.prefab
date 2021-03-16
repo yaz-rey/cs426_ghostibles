@@ -125,11 +125,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd55fab97210a4ed68d7a5de31561292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  speed: 40
   rotationSpeed: 90
   force: 700
   jumpCount: 0
   maxJumps: 1
   health: 30
+  attackInterval: 2
   cannon: {fileID: 0}
   bullet: {fileID: 0}

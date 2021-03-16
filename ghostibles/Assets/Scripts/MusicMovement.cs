@@ -72,6 +72,8 @@ public class MusicMovement : MonoBehaviour
         }
 
         if (attack){
+            GetComponent<MeshRenderer>().material.color = Color.cyan;
+
             // check time 
             if (attackInterval > 0){
                 attackInterval -= Time.deltaTime;
@@ -81,9 +83,12 @@ public class MusicMovement : MonoBehaviour
             // once interval over, decrease immunity for ghost
             else{
                 Debug.Log("2 seconds elapsed - attack ghosts");
-                CheckGhosts(transform.position, 2);
+                CheckGhosts(transform.position, 12);
                 attackInterval = 2;
             }
+        }
+        else{
+            GetComponent<MeshRenderer>().material.color = Color.white;
         }
         
 
@@ -93,9 +98,13 @@ public class MusicMovement : MonoBehaviour
             newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 2;
             newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
         }*/
-
-        if (health == 0){
+        if(health == 20){
+            GetComponent<MeshRenderer>().material.color = Color.yellow;
+        }
+        if(health == 10){
             GetComponent<MeshRenderer>().material.color = Color.red;
+        }
+        if (health == 0){
             Destroy(gameObject);
         }
         // press a button
