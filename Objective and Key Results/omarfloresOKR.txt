@@ -1,5 +1,20 @@
 Omar's Objective and Key Results 
 
-
 Schedule and deliverable: 
-	- Create the physical surroundings for the Software Prototype Demo -- Tues by 10pm (estimate: 2 hrs) 
+
+Week 10: 
+	- Construct UI for SW Demo - Tues by 9pm (estimate: 2 hours)
+		- Haunted house theme 
+		- Two floors 
+
+Week 11: 
+	- Contribute to product implementing a ghost AI technique - Fri by 8pm (estimate: 2-3 hours)
+	- Contribute to product by adding light and sound effects - Fri by 11pm (estimate: 1 hour)
+
+Week 12: 
+	- Contribute to product by adding textures to fit overall game theme - Fri by 8pm (estimate: 2 hours)
+	- Improve on UI interface by encorporating more obstacles/objects - Fri by 11pm (estimate: 2-3 hours)
+
+Week 13: 
+	- Implement shader constructor - Fri by 8pm (estimate: 2 hours)
+	- Work on control screen - Sat by 11pm (estimate: 4+ hours)
