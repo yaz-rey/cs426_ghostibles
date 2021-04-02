@@ -1,0 +1,202 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/unity202022f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50104
+Successfully changed project path to: /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles
+/Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 42.93 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/unity202022f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Assets
+GfxDevice: creating device client; threaded=0
+2021-04-02 13:59:46.815 Unity[1755:151406] DELL S2415H preferred device: Intel(R) Iris(TM) Graphics 6000 (low power)
+2021-04-02 13:59:46.815 Unity[1755:151406] Metal devices available: 1
+2021-04-02 13:59:46.815 Unity[1755:151406] 0: Intel(R) Iris(TM) Graphics 6000 (low power)
+2021-04-02 13:59:46.844 Unity[1755:151406] Using device Intel(R) Iris(TM) Graphics 6000 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Graphics 6000
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/unity202022f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/unity202022f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/unity202022f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56755
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/unity202022f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/unity202022f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000871 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 37.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.369 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000598 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7f86b2649c00 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138d36000 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x7f86b243a000 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138d36000 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138f2c000 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138d36000 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138f2c000 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138d36000 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138d4f000 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x7f86b243a000 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x7f86b2440400 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x139052000 doesn't match image /Users/sapphypai/Documents/CS426Projects/cs426_ghostibles/ghostibles/Library/ScriptAssemblies/UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.758 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/unity202022f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.7 MB.
+System memory in use after: 108.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1545.
+Total: 3.552758 ms (FindLiveObjects: 0.335256 ms CreateObjectMapping: 0.087558 ms MarkObjects: 2.898365 ms  DeleteObjects: 0.229191 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/MusicMovement.cs
+  artifactKey: Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MusicMovement.cs using Guid(bd55fab97210a4ed68d7a5de31561292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54d656baba669e722c1b619edab425eb') in 0.806969 seconds
+  Import took 0.811873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.659369 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Door.prefab
+  artifactKey: Guid(9175d08a6bdddeb48afa15d1b714d918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Door.prefab using Guid(9175d08a6bdddeb48afa15d1b714d918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3012ab990ef8fc520344d7bf79da2a1') in 0.659527 seconds
+  Import took 0.668961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005533 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Lamp_01.prefab
+  artifactKey: Guid(7c3ceb5b9a32b7a4a8d42d30223f3c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Lamp_01.prefab using Guid(7c3ceb5b9a32b7a4a8d42d30223f3c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f0a48ef0ca93b1560c20b0457a54276') in 0.038598 seconds
+  Import took 0.049551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Lamp_02.prefab
+  artifactKey: Guid(7970c12d6b19a504fbc82353b8a43abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Lamp_02.prefab using Guid(7970c12d6b19a504fbc82353b8a43abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81eab619493b520733dbff57f906a6ce') in 0.044845 seconds
+  Import took 0.053687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000626 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Pillar.prefab
+  artifactKey: Guid(7c7baabdbc078cb4098d5880fc72c0f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Pillar.prefab using Guid(7c7baabdbc078cb4098d5880fc72c0f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e3bad6cf8a55c5043d53bc963258e1') in 0.056691 seconds
+  Import took 0.062723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Floor.prefab
+  artifactKey: Guid(e348e7143b6247b488737e4be26fb038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Floor.prefab using Guid(e348e7143b6247b488737e4be26fb038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '288f92557d689067aaf04fe2205f9aa3') in 0.040881 seconds
+  Import took 0.068212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Wall.prefab
+  artifactKey: Guid(3ad7a1cffb2556547a8b7e60fd320431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Wall.prefab using Guid(3ad7a1cffb2556547a8b7e60fd320431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217b9f5b0b0fe2725462ad1d1cbaadee') in 0.060942 seconds
+  Import took 0.067812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Wall_Entrance.prefab
+  artifactKey: Guid(49a5f24a081cbbc44bd23d76c2869723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedHandPaintedDungeon(Free)/Prefabs/Wall_Entrance.prefab using Guid(49a5f24a081cbbc44bd23d76c2869723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dd3300478bafde2fd7dbe5f9cfac464') in 0.028521 seconds
+  Import took 0.032682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 334.307584 seconds.
+  path: Assets/BerserkerBLK.mat
+  artifactKey: Guid(04b03862e101c477aa386c69cafaefaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BerserkerBLK.mat using Guid(04b03862e101c477aa386c69cafaefaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec17f69db7cc071fde3f2f6713df8f02') in 0.510836 seconds
+  Import took 0.515681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/PaintRed.mat
+  artifactKey: Guid(7ff2325086a604e2181ce236d1f20d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PaintRed.mat using Guid(7ff2325086a604e2181ce236d1f20d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf44233bae0939ef5b2dc35f46b0535') in 0.031528 seconds
+  Import took 0.042182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Green.mat
+  artifactKey: Guid(b802ee23472664290a7404befe12dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Green.mat using Guid(b802ee23472664290a7404befe12dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8188a7011d937d9691d53bd5525f4d67') in 0.056844 seconds
+  Import took 0.069904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Blue.mat
+  artifactKey: Guid(65187cab9a3ff4bcb811e58c7281362d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blue.mat using Guid(65187cab9a3ff4bcb811e58c7281362d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfc2da95cc72abdf2420577a0f0079f') in 0.050107 seconds
+  Import took 0.058099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/Purple.mat
+  artifactKey: Guid(37607a9741c8b4045928d8c98d5fea62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Purple.mat using Guid(37607a9741c8b4045928d8c98d5fea62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7801ad07be1b340146b096f5972a5e') in 0.043817 seconds
+  Import took 0.047400 seconds .
+
