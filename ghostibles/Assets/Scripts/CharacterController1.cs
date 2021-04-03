@@ -1,0 +1,228 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CharacterController1 : MonoBehaviour
+{
+	// public BulletCount bulletCountManager;
+	public float speed = 25.0f;
+	public float rotationSpeed = 90;
+	public float force = 700f;
+
+	public GameObject cannon;
+	public GameObject bullet;
+
+	public int bulletCount = 10;
+
+	Rigidbody rb;
+	Transform t;
+	Animator anim;
+
+	// gun attack
+	float attackInterval = 0.2f;
+	bool startTime = false;
+
+	// weapons: gun, instr
+	string weapon = "gun"; 
+
+	public int health = 30;
+
+	// stun attack
+    public float stunInterval = 2;
+    private bool stun = false;
+
+
+	// Start is called before the first frame update
+	void Start()
+	{
+		rb = GetComponent<Rigidbody>();
+		t = GetComponent<Transform>();
+		anim = GetComponent<Animator>();
+	}
+
+	//Add bullet. Called from Target.cs
+	public void AddBullet(){
+		print("AT ADDBULLET-Character " + bulletCount);
+		bulletCount++;
+		print("CControl "+ this.bulletCount);
+	//bulletCountManager.MinusBullet(bulletCount);
+	//Start();
+	}
+
+	// Update is called once per frame
+	void Update(){
+
+		if (Input.GetKey(KeyCode.Alpha1)){
+			weapon = "gun";
+			Debug.Log("Weapon: GUN");
+		}
+		if (Input.GetKey(KeyCode.Alpha2)){
+			weapon = "instr";
+			Debug.Log("Weapon: INSTRUMENT");
+		}
+
+		if (Input.GetKey(KeyCode.W)){
+			rb.velocity += this.transform.forward * speed * Time.deltaTime;
+			/*
+
+			if (rb.velocity > 0){
+				anim.SetBool("Walk", true);
+			}
+			else{
+				anim.SetBool("Walk", false);
+			}
+			*/
+		}
+
+		
+		else if (Input.GetKey(KeyCode.S)){
+			rb.velocity -= this.transform.forward * speed * Time.deltaTime;
+		}
+
+
+		if (Input.GetKey(KeyCode.D)){
+			t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+		}
+		else if (Input.GetKey(KeyCode.A)){
+			t.rotation *= Quaternion.Euler(0, - rotationSpeed * Time.deltaTime, 0);
+		}
+
+		if (Input.GetKeyDown(KeyCode.Space)){
+			rb.AddForce(t.up * force);
+		}
+
+		if (Input.GetButtonDown("Fire1") && weapon.Equals("gun")){
+			anim.SetTrigger("Shoot");
+			startTime = true;
+		}
+
+		// align shooting with the animation
+		if (startTime){
+			if (attackInterval > 0){
+				attackInterval -= Time.deltaTime;
+
+			}
+			else{
+				if(bulletCount == 0){
+					//bulletCountManager.MinusBullet(bulletCount);
+					print("Zero bullets Left");
+				}
+				else{
+					GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
+					newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 2;
+					newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
+					bulletCount--;
+					//bulletCountManager.MinusBullet(bulletCount);
+					print(bulletCount + " Left");
+				}
+				startTime = false;
+				attackInterval = 0.2f;
+
+			}
+
+		}
+
+		// https://answers.unity.com/questions/797799/help-with-on-off-toggle-c.html
+        if (Input.GetKeyDown(KeyCode.L) && weapon.Equals("instr")){
+            if(stun){
+                // disable attack
+                Debug.Log("Disabled Attack");
+                stun = false;
+            }
+            else{
+                // enable attack
+                Debug.Log("Enabled Attack");
+                stun = true; 
+            }
+        
+        }
+
+        if (stun){
+        	anim.SetBool("Play", true);
+            GetComponent<MeshRenderer>().material.color = Color.cyan;
+            // check time 
+            if (stunInterval > 0){
+                stunInterval -= Time.deltaTime;
+                Debug.Log("Changing time: " + stunInterval);
+
+            }
+            // once interval over, decrease immunity for ghost
+            else{
+                Debug.Log("2 seconds elapsed - attack ghosts");
+                CheckGhosts(transform.position, 14);
+                stunInterval = 2;
+            }
+        }
+        else{
+        	anim.SetBool("Play", false);
+
+            if (health == 30){
+                GetComponent<MeshRenderer>().material.color = Color.white;
+            }
+            if(health == 20){
+                GetComponent<MeshRenderer>().material.color = Color.yellow;
+            }
+            if(health == 10){
+                GetComponent<MeshRenderer>().material.color = Color.red;
+            }
+        }
+     
+        
+        if (health == 0){
+            Destroy(gameObject);
+        }
+	}
+
+
+	// https://answers.unity.com/questions/862880/disable-jumping-more-than-once.html
+    // Used tag to identity different grounds in which to allow jumping 
+    private void OnCollisionEnter(Collision collision){
+        if (collision.gameObject.tag == "Target"){
+            if (health > 0){
+                health = health - 10;
+            }
+        }
+        if (collision.gameObject.tag == "Ghost"){
+            if (health > 0){
+                health = health - 10;
+            }
+        }
+        if (collision.gameObject.tag == "Knight"){
+            if (health > 0){
+                health = health - 10;
+            }
+        }
+        if (collision.gameObject.tag == "Boss"){
+            if (health > 0){
+                health = health - 10;
+            }
+        }
+    }
+
+    // https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html
+    void CheckGhosts(Vector3 center, float radius)
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(center, radius);
+        foreach (var hitCollider in hitColliders)
+        {
+        	if (hitCollider.gameObject.tag == "Target"){
+                // https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html
+                hitCollider.SendMessage("DecreaseImmunity");
+            }
+            if (hitCollider.gameObject.tag == "Ghost"){
+                // https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html
+                hitCollider.SendMessage("DecreaseImmunity");
+            }
+            if (hitCollider.gameObject.tag == "Knight"){
+                // https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html
+                hitCollider.SendMessage("DecreaseImmunity");
+            }
+            if (hitCollider.gameObject.tag == "Boss"){
+                // https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html
+                hitCollider.SendMessage("DecreaseImmunity");
+            }
+            
+        }
+    }
+}
+
