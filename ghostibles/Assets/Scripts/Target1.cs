@@ -9,6 +9,8 @@ public class Target1 : MonoBehaviour
     public int knightHitPts = 0;
     public int ghostHitPts = 0;
 
+    public int immunity = 30;
+
     private float timer = 0.0F;
     private float waitTime = 10.0f;
     public int rounds = 0;//Keep track of Knigh ghost's transformation
@@ -163,6 +165,23 @@ public class Target1 : MonoBehaviour
                 break;
             default:
                 break;
+        }
+    }
+
+     // https://docs.unity3d.com/ScriptReference/Color.html
+    private void DecreaseImmunity(){
+        if (immunity > 0){
+            immunity = immunity - 10;
+        }
+        if (immunity == 20){
+            GetComponent<MeshRenderer>().material.color = Color.yellow;
+        }
+        if (immunity == 10){
+            GetComponent<MeshRenderer>().material.color = Color.blue;
+        }
+        if (immunity == 0){
+            GetComponent<MeshRenderer>().material.color = Color.black;
+            Destroy(gameObject);
         }
     }
 }
