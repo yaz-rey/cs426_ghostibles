@@ -31,6 +31,13 @@ public class CharacterController1 : MonoBehaviour
     public float stunInterval = 2;
     private bool stun = false;
 
+	//Audio clips
+	public AudioSource gunShot;
+	public AudioSource guitarClip;
+
+	private bool guitarPlaying = false;
+	private bool gunBlast = false;
+
 
 	// Start is called before the first frame update
 	void Start()
@@ -38,6 +45,15 @@ public class CharacterController1 : MonoBehaviour
 		rb = GetComponent<Rigidbody>();
 		t = GetComponent<Transform>();
 		anim = GetComponent<Animator>();
+		//https://answers.unity.com/questions/175995/can-i-play-multiple-audiosources-from-one-gameobje.html
+		//https://www.youtube.com/watch?v=jFjg2iwuF1s
+		AudioSource[] sounds = GetComponents<AudioSource>();
+		gunShot = sounds[0];
+		
+		guitarClip = sounds[1];
+		//Start of with no sounds
+		gunShot.Stop();
+		guitarClip.Stop();
 	}
 
 	//Add bullet. Called from Target.cs
@@ -81,10 +97,21 @@ public class CharacterController1 : MonoBehaviour
 
 
 		if (Input.GetKey(KeyCode.D)){
+			anim.SetBool("RightTurn",true);
 			t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+			
 		}
-		else if (Input.GetKey(KeyCode.A)){
+		if(Input.GetKey(KeyCode.D) == false){
+			anim.SetBool("RightTurn", false);
+		}
+		//Deleted else if for this so the player can move left or not if 'A' is being clicked on
+		if (Input.GetKey(KeyCode.A)){
+			anim.SetBool("LeftTurn",true);
 			t.rotation *= Quaternion.Euler(0, - rotationSpeed * Time.deltaTime, 0);
+			
+		}
+		if(Input.GetKey(KeyCode.A) == false){
+			anim.SetBool("LeftTurn", false);
 		}
 
 		if (Input.GetKeyDown(KeyCode.Space)){
@@ -92,8 +119,18 @@ public class CharacterController1 : MonoBehaviour
 		}
 
 		if (Input.GetButtonDown("Fire1") && weapon.Equals("gun")){
+			if(bulletCount > 0){
+				gunShot.Play();//Play gun shot sound as long as we have bullets
+			}
+			
 			anim.SetTrigger("Shoot");
 			startTime = true;
+		}
+		//Turn off the gun sound
+		if (Input.GetButtonDown("Fire1") && weapon.Equals("gun") == false){
+		
+			gunShot.Stop();//Play gun shot sound as long as we have bullets
+			
 		}
 
 		// align shooting with the animation
@@ -124,18 +161,30 @@ public class CharacterController1 : MonoBehaviour
 
 		// https://answers.unity.com/questions/797799/help-with-on-off-toggle-c.html
         if (Input.GetKeyDown(KeyCode.L) && weapon.Equals("instr")){
+			
             if(stun){
                 // disable attack
                 Debug.Log("Disabled Attack");
                 stun = false;
+				
+				guitarClip.Stop();
+				Debug.Log("Stop Music");
+				anim.SetBool("Play",false);
+				//Disable animation
+
             }
             else{
                 // enable attack
                 Debug.Log("Enabled Attack");
-                stun = true; 
+				stun = true; 
+				
+				guitarClip.Play();
+				Debug.Log("Play Music");
             }
         
         }
+
+		
 
         if (stun){
         	anim.SetBool("Play", true);
@@ -168,9 +217,9 @@ public class CharacterController1 : MonoBehaviour
         }
      
         
-        if (health == 0){
-            Destroy(gameObject);
-        }
+        // if (health == 0){
+        //     Destroy(gameObject);
+        // }
 	}
 
 
