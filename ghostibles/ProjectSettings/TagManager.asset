@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Target
   - Goal
+  - Ammo
+  - Ghost
+  - Boss
+  - Knight
+  - Bullet
   layers:
   - Default
   - TransparentFX

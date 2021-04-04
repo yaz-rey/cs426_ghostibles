@@ -20,6 +20,14 @@ public class Target1 : MonoBehaviour
     public BulletCount bCount = new BulletCount();//Increase bCount
     public CharacterController1 cCount = new CharacterController1();
 
+    Animator anim;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        anim = GetComponent<Animator>();  
+    }
+
     
     private void OnCollisionEnter(Collision collision) {
          print("START " +gameObject.name);
@@ -31,11 +39,14 @@ public class Target1 : MonoBehaviour
                 print("TAG " + collision.gameObject.tag);
                 // print("Collision Plane");
                 break;
-            case "Player":
+            case "Bullet":
                 print("TAG " + collision.gameObject.tag);
+                anim.SetTrigger("Attack");
                 ProvidePoint();
                 break;
-            
+            case "Player":
+                print("TAG " + collision.gameObject.tag);
+                break;
             default:
                 print("something wrong");
                 //bCount.AddBullet();
