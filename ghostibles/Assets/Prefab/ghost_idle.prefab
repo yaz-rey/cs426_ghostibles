@@ -842,6 +842,7 @@ GameObject:
   - component: {fileID: 2773966412569504084}
   - component: {fileID: 2773966412569504083}
   - component: {fileID: 2773966412569504085}
+  - component: {fileID: -1501891148623998453}
   m_Layer: 0
   m_Name: ghost_idle
   m_TagString: Ghost
@@ -940,6 +941,25 @@ MonoBehaviour:
   myPrefab: {fileID: 0}
   bCount: {fileID: 0}
   cCount: {fileID: 0}
+--- !u!95 &-1501891148623998453
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3080024611234829312}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de4206589d59f4958a2828c7a6591187, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3501596519626204343
 GameObject:
   m_ObjectHideFlags: 0
