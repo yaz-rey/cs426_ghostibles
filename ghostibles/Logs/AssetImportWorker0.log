@@ -88,3 +88,4 @@ Received Import Request.
 Start importing Assets/ScoreManager.prefab using Guid(3016435a711094752b1ba7a5c3a7f3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb2652159dc5929c6edf6bdcff2ff0c') in 0.003722 seconds
   Import took 0.005996 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
