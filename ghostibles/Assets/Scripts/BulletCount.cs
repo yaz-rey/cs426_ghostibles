@@ -16,10 +16,16 @@ public class BulletCount : MonoBehaviour
         // print("start point" + total_score);
     }
 
+    public void UpdateBullets(int count){
+        maxBullet = count;
+        bullet.text = "Bullets Left: " + maxBullet;
+
+    }
+
     //Add bullet. Called from Target.cs
-    public void AddBullet(){
+    public void AddBullet(int count){
         print("AT ADDBULLET" + maxBullet);
-        maxBullet += 1;
+        maxBullet += count;
         print("MAXB "+ maxBullet);
         //Start();
     }
