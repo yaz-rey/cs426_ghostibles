@@ -20,13 +20,86 @@ public class Target1 : MonoBehaviour
     public BulletCount bCount = new BulletCount();//Increase bCount
     public CharacterController1 cCount = new CharacterController1();
 
+    private Transform playerTransform;
+    bool chasing = false;
+    bool waiting = false;
+    private float distanceFromTarget;
+    public bool inViewCone;
+
+    // Where is it going and how fast?
+    Vector3 direction;
+    private float walkSpeed = 2f;
+    private int currentTarget;    
+    private Transform[] waypoints = null;
+
     Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+
         anim = GetComponent<Animator>();  
     }
+
+    void Update(){
+        if (chasing){
+            //direction = playerTransform.position - transform.position;
+            rotateZombie();
+        }
+
+        if(!waiting){
+            transform.Translate(Vector3.forward * Time.deltaTime * 3);
+            //transform.Translate(walkSpeed * direction * Time.deltaTime, Space.World);
+
+        }
+    }
+
+      private void FixedUpdate()
+    {
+        /*if (inViewCone){
+            anim.SetTrigger("Attack");
+        }*/
+        //Debug.Log("HI HERE IS INVIEWCONE in " + gameObject.name + ": " + inViewCone);
+        // Give the values to the FSM (animator)
+        //distanceFromTarget = Vector3.Distance(waypoints[currentTarget].position, transform.position);
+        //animator.SetFloat("distanceFromWaypoint", distanceFromTarget);
+        anim.SetBool("playerInSight", inViewCone);
+ 
+    }
+
+    public void Chase()
+      {
+          // Load the direction of the player
+          //direction = playerTransform.position - transform.position;
+          rotateZombie();
+
+      }
+    
+      public void StopChasing()
+      {
+          chasing = false;
+      }
+    
+      private void rotateZombie()
+      {
+          float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+          transform.LookAt(playerTransform);
+
+          //transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
+         //direction = direction.normalized;
+      }
+    
+      public void StartChasing()
+      {
+          chasing = true;
+      }
+    
+    
+      public void ToggleWaiting()
+      {
+          waiting  = !waiting;
+      }
 
     
     private void OnCollisionEnter(Collision collision) {
@@ -41,7 +114,7 @@ public class Target1 : MonoBehaviour
                 break;
             case "Bullet":
                 print("TAG " + collision.gameObject.tag);
-                anim.SetTrigger("Attack");
+                //anim.SetTrigger("Attack");
                 ProvidePoint();
                 break;
             case "Player":
