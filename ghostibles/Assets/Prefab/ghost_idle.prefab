@@ -1048,6 +1048,15 @@ MonoBehaviour:
   immunity: 30
   myPrefab: {fileID: 1651790964269944433, guid: 0ba4f2a487b9540ba9db4a5cfa53509d, type: 3}
   inViewCone: 0
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!95 &1907320232
 Animator:
   serializedVersion: 3
