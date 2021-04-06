@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 1479851479}
-  health: 150
+  health: 100
 --- !u!1 &83685984
 GameObject:
   m_ObjectHideFlags: 0
@@ -4742,12 +4742,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884752484}
-  m_LocalRotation: {x: -0, y: -0.06927531, z: -0, w: -0.99759763}
-  m_LocalPosition: {x: 0.1, y: 0.856, z: 0.38}
+  m_LocalRotation: {x: -0, y: -0.0692753, z: -0, w: -0.9975976}
+  m_LocalPosition: {x: 0.099999994, y: 0.85600007, z: 0.37999958}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
-  m_Father: {fileID: 543450651955047275}
-  m_RootOrder: 1
+  m_Father: {fileID: 7992580012134000922}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 531.271, z: 0}
 --- !u!4 &914457296 stripped
 Transform:
@@ -7519,7 +7519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 346337535}
-  maxBullet: 10
+  maxBullet: 15
 --- !u!1001 &1254983782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10412,7 +10412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c34e9ea14af6fd34b8f25d1f7b7bccc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreManager: {fileID: 0}
+  scoreManager: {fileID: 1119658300}
+  ammunition: {fileID: 1651790964269944433, guid: 0ba4f2a487b9540ba9db4a5cfa53509d, type: 3}
   health: 60
   player: {fileID: 919132147678998995}
 --- !u!95 &1709203638
@@ -19509,7 +19510,6 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 963194228}
-  - {fileID: 884752485}
   - {fileID: 7992580012134000922}
   - {fileID: 5465940246119205887}
   m_Father: {fileID: 0}
@@ -19700,8 +19700,8 @@ MonoBehaviour:
   force: 700
   cannon: {fileID: 884752484}
   bullet: {fileID: 2257571954719840422, guid: f2f5de87b63ef466ba1626aaa563b119, type: 3}
-  bulletCount: 10
-  health: 150
+  bulletCount: 15
+  health: 100
   stunInterval: 2
   gunShot: {fileID: 0}
   guitarClip: {fileID: 0}
@@ -22355,7 +22355,7 @@ Transform:
   - {fileID: 8169382870412033216}
   - {fileID: 5742672707182934124}
   m_Father: {fileID: 543450651955047275}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5477181765659869786
 Transform:
@@ -23278,9 +23278,10 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 884752485}
   m_Father: {fileID: 543450651955047275}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8022515958322438563
 GameObject:
