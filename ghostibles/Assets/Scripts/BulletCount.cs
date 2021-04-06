@@ -22,7 +22,7 @@ public class BulletCount : MonoBehaviour
 
     }
 
-    //Add bullet. Called from Target.cs
+    /*//Add bullet. Called from Target.cs
     public void AddBullet(int count){
         print("AT ADDBULLET" + maxBullet);
         maxBullet += count;
@@ -34,5 +34,5 @@ public class BulletCount : MonoBehaviour
     {
               
         bullet.text = "Bullets Left: " + bullets;
-    }
+    }*/
 }
