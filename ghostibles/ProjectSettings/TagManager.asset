@@ -11,6 +11,8 @@ TagManager:
   - Boss
   - Knight
   - Bullet
+  - Wood
+  - Gem
   layers:
   - Default
   - TransparentFX
