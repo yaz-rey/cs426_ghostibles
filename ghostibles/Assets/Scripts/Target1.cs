@@ -5,31 +5,31 @@ using UnityEngine;
 public class Target1 : MonoBehaviour
 {
     public Score scoreManager;
-    public int bossHitPts = 0;
-    public int knightHitPts = 0;
+    //public int bossHitPts = 0;
+    //public int knightHitPts = 0;
     public int ghostHitPts = 0;
 
     public int immunity = 30;
 
-    private float timer = 0.0F;
-    private float waitTime = 10.0f;
-    public int rounds = 0;//Keep track of Knigh ghost's transformation
+    //private float timer = 0.0F;
+    //private float waitTime = 10.0f;
+    //public int rounds = 0;//Keep track of Knigh ghost's transformation
 
     //Create ammunition using the prefab
     public GameObject myPrefab;
-    public BulletCount bCount = new BulletCount();//Increase bCount
-    public CharacterController1 cCount = new CharacterController1();
+    //public BulletCount bCount = new BulletCount();//Increase bCount
+    //public CharacterController1 cCount = new CharacterController1();
 
     private Transform playerTransform;
     bool chasing = false;
     bool waiting = false;
-    private float distanceFromTarget;
+    //private float distanceFromTarget;
     public bool inViewCone;
 
     // Where is it going and how fast?
-    Vector3 direction;
-    private float walkSpeed = 2f;
-    private int currentTarget;    
+   //Vector3 direction;
+    //private float walkSpeed = 2f;
+    //private int currentTarget;    
     private Transform[] waypoints = null;
 
     Animator anim;
@@ -83,7 +83,7 @@ public class Target1 : MonoBehaviour
     
       private void rotateZombie()
       {
-          float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+          //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
           transform.LookAt(playerTransform);
 
           //transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
@@ -108,10 +108,10 @@ public class Target1 : MonoBehaviour
 
 
         switch(collision.gameObject.tag){
-            case "Friendly":
+           /* case "Friendly":
                 print("TAG " + collision.gameObject.tag);
                 // print("Collision Plane");
-                break;
+                break;*/
             case "Bullet":
                 print("TAG " + collision.gameObject.tag);
                 //anim.SetTrigger("Attack");
@@ -121,7 +121,7 @@ public class Target1 : MonoBehaviour
                 print("TAG " + collision.gameObject.tag);
                 break;
             default:
-                print("something wrong");
+/*                print("something wrong");
                 //bCount.AddBullet();
                 bCount = new BulletCount();
                 print("Add-bCount");
@@ -129,16 +129,16 @@ public class Target1 : MonoBehaviour
 
                 cCount = new CharacterController1();
                 cCount.AddBullet();
-                Destroy(myPrefab);
+                Destroy(myPrefab);*/
                 break;
         } 
         print("TAG-outside " + collision.gameObject.tag);
-        if(collision.gameObject.name == "Ammo"){
+/*        if(collision.gameObject.name == "Ammo"){
             bCount = new BulletCount();
             print("Add-bCount");
             bCount.AddBullet();
             //Destroy(myPrefab);
-        }
+        }*/
         // Destroy(gameObject);
     }
 
@@ -147,7 +147,7 @@ public class Target1 : MonoBehaviour
         print("GAMETAG " + gameObject.tag);
         switch (gameObject.tag)
         {
-            
+            /*
             case "Boss":
                 print("BOSS "+ gameObject.tag);
                 //gameObject.tag = "Friendly";
@@ -224,26 +224,16 @@ public class Target1 : MonoBehaviour
                     knightHitPts += 1;
                 }
                 
-                break;
+                break;*/
             case "Ghost":
                 print("GHOST "+gameObject.tag);
-                if(ghostHitPts == 0){
+                ghostHitPts += 1;
 
-                    ghostHitPts += 1;
-
-                }
-
-                else if(ghostHitPts == 1){
-                    ghostHitPts += 1;
-                }
-
-                else if(ghostHitPts == 2){
+                if(ghostHitPts == 3){
+                    GameObject ammo = GameObject.Instantiate(myPrefab, transform.position, transform.rotation) as GameObject;
+                    ammo.tag = "Ammo";
                     Destroy(gameObject);
                     scoreManager.AddPoint(35);
-                }
-                
-                else{
-                    ghostHitPts += 1;
                 }
                 
                 break;
