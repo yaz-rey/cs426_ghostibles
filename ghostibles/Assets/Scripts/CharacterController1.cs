@@ -25,7 +25,7 @@ public class CharacterController1 : MonoBehaviour
 	// weapons: gun, instr
 	string weapon = "gun"; 
 
-	public int health = 30;
+	public int health = 150;
 
 	// stun attack
     public float stunInterval = 2;
@@ -42,6 +42,8 @@ public class CharacterController1 : MonoBehaviour
 
 
 	public BulletCount bulletManager;
+	public Health healthManager;
+
 
 	// Start is called before the first frame update
 	void Start()
@@ -60,15 +62,6 @@ public class CharacterController1 : MonoBehaviour
 		guitarClip.Stop();
 	}
 
-	//Add bullet. Called from Target.cs
-	public void AddBullet(){
-		print("AT ADDBULLET-Character " + bulletCount);
-		bulletCount++;
-		print("CControl "+ this.bulletCount);
-	//bulletCountManager.MinusBullet(bulletCount);
-	//Start();
-	}
-
 	// Update is called once per frame
 	void Update(){
 
@@ -83,15 +76,6 @@ public class CharacterController1 : MonoBehaviour
 
 		if (Input.GetKey(KeyCode.W)){
 			rb.velocity += this.transform.forward * speed * Time.deltaTime;
-			/*
-
-			if (rb.velocity > 0){
-				anim.SetBool("Walk", true);
-			}
-			else{
-				anim.SetBool("Walk", false);
-			}
-			*/
 		}
 
 		
@@ -231,24 +215,28 @@ public class CharacterController1 : MonoBehaviour
 	// https://answers.unity.com/questions/862880/disable-jumping-more-than-once.html
     // Used tag to identity different grounds in which to allow jumping 
     private void OnCollisionEnter(Collision collision){
-        if (collision.gameObject.tag == "Target"){
+/*        if (collision.gameObject.tag == "Target"){
             if (health > 0){
                 health = health - 10;
             }
-        }
+        }*/
+
+
         if (collision.gameObject.tag == "Ghost"){
             if (health > 0){
-                health = health - 10;
+                health = health - 5;
+                healthManager.UpdateHealth(health);
             }
         }
-        if (collision.gameObject.tag == "Knight"){
+/*        if (collision.gameObject.tag == "Knight"){
             if (health > 0){
                 health = health - 10;
             }
-        }
+        }*/
         if (collision.gameObject.tag == "Boss"){
             if (health > 0){
-                health = health - 10;
+                health = health - 15;
+                healthManager.UpdateHealth(health);
             }
         }
 		if (collision.gameObject.tag == "Gem") {

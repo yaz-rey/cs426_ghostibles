@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public Score scoreManager;
+    public int health = 60;
     [SerializeField]
     private CharacterController1 player;
 
