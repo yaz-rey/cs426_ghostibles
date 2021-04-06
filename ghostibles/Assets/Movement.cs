@@ -16,6 +16,11 @@ public class Movement : MonoBehaviour
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         animator = GetComponent<Animator>();
+        // https://stackoverflow.com/questions/40752083/how-to-find-child-of-a-gameobject-or-the-script-attached-to-child-gameobject-via
+        // https://forum.unity.com/threads/make-gameobject-disappear.381096/
+        // get renderer to disable and then enable
+        transform.GetChild(0).gameObject.GetComponent<Renderer>().enabled = false;
+
     }
 
     // Update is called once per frame
@@ -23,6 +28,7 @@ public class Movement : MonoBehaviour
     {
         if(player && player.HasGem())
         {
+            transform.GetChild(0).gameObject.GetComponent<Renderer>().enabled = true;
             agent.destination = player.gameObject.transform.position;
         }
 

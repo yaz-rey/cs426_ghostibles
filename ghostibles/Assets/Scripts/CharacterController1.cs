@@ -41,6 +41,8 @@ public class CharacterController1 : MonoBehaviour
 	private bool hasGem = false;
 
 
+	public BulletCount bulletManager;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -151,6 +153,7 @@ public class CharacterController1 : MonoBehaviour
 					newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 2;
 					newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
 					bulletCount--;
+					bulletManager.UpdateBullets(bulletCount);
 					//bulletCountManager.MinusBullet(bulletCount);
 					print(bulletCount + " Left");
 				}
@@ -250,6 +253,12 @@ public class CharacterController1 : MonoBehaviour
         }
 		if (collision.gameObject.tag == "Gem") {
 			hasGem = true;
+		}
+		if (collision.gameObject.tag == "Ammo"){
+			bulletCount += 2;
+			Debug.Log("Number of bullets now: " + bulletCount);
+			bulletManager.UpdateBullets(bulletCount);
+
 		}
     }
 
