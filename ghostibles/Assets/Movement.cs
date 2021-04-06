@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public Score scoreManager;
+    public GameObject ammunition;
+    public int health = 60;
     [SerializeField]
     private CharacterController1 player;
 
@@ -44,5 +47,22 @@ public class Movement : MonoBehaviour
         }
         
         lastPosition = transform.position;
+
+        if (health == 0){
+            GameObject ammo = GameObject.Instantiate(ammunition, transform.position, transform.rotation) as GameObject;
+            ammo.tag = "Ammo";
+            GameObject ammo2 = GameObject.Instantiate(ammunition, transform.position + new Vector3(0.5f, 0f, 0f), transform.rotation) as GameObject;
+            ammo2.tag = "Ammo";
+            scoreManager.AddPoint(50);
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.tag == "Bullet"){
+            if (health > 0){
+                health -= 10;
+            }
+        }
     }
 }
