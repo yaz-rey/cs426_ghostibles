@@ -38,6 +38,8 @@ public class CharacterController1 : MonoBehaviour
 	private bool guitarPlaying = false;
 	private bool gunBlast = false;
 
+	private bool hasGem = false;
+
 
 	// Start is called before the first frame update
 	void Start()
@@ -246,6 +248,9 @@ public class CharacterController1 : MonoBehaviour
                 health = health - 10;
             }
         }
+		if (collision.gameObject.tag == "Gem") {
+			hasGem = true;
+		}
     }
 
     // https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html
@@ -273,5 +278,12 @@ public class CharacterController1 : MonoBehaviour
             
         }
     }
+
+	public bool HasGem()
+	{
+		return hasGem;
+	}
+
+
 }
 
