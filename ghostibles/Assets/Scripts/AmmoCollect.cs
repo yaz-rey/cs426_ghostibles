@@ -18,7 +18,7 @@ public class AmmoCollect : MonoBehaviour
 
     //this method is called whenever a collision is detected
     private void OnCollisionEnter(Collision collision) {
-    	// check attack 
+    	// check whether player collided 
         if (collision.gameObject.tag == "Player"){
         	Destroy(gameObject);
         }
