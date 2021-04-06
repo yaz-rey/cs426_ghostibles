@@ -28,7 +28,7 @@ public class CharacterController1 : MonoBehaviour
 	public int health = 150;
 
 	// stun attack
-    public float stunInterval = 2;
+    public float stunInterval = 1;
     private bool stun = false;
 
 	//Audio clips
@@ -138,7 +138,6 @@ public class CharacterController1 : MonoBehaviour
 					newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
 					bulletCount--;
 					bulletManager.UpdateBullets(bulletCount);
-					//bulletCountManager.MinusBullet(bulletCount);
 					print(bulletCount + " Left");
 				}
 				startTime = false;
@@ -173,8 +172,6 @@ public class CharacterController1 : MonoBehaviour
         
         }
 
-		
-
         if (stun){
         	anim.SetBool("Play", true);
             GetComponent<MeshRenderer>().material.color = Color.cyan;
@@ -186,53 +183,30 @@ public class CharacterController1 : MonoBehaviour
             }
             // once interval over, decrease immunity for ghost
             else{
-                Debug.Log("2 seconds elapsed - attack ghosts");
+                Debug.Log("1 second elapsed - attack ghosts");
                 CheckGhosts(transform.position, 14);
-                stunInterval = 2;
+                stunInterval = 1;
             }
         }
         else{
         	anim.SetBool("Play", false);
-
-            if (health == 30){
-                GetComponent<MeshRenderer>().material.color = Color.white;
-            }
-            if(health == 20){
-                GetComponent<MeshRenderer>().material.color = Color.yellow;
-            }
-            if(health == 10){
-                GetComponent<MeshRenderer>().material.color = Color.red;
-            }
+        	// can add if statements about health level here
         }
-     
-        
-        // if (health == 0){
-        //     Destroy(gameObject);
-        // }
 	}
 
 
 	// https://answers.unity.com/questions/862880/disable-jumping-more-than-once.html
     // Used tag to identity different grounds in which to allow jumping 
     private void OnCollisionEnter(Collision collision){
-/*        if (collision.gameObject.tag == "Target"){
-            if (health > 0){
-                health = health - 10;
-            }
-        }*/
-
-
+        // check if stunned ghost is trying to push against you
         if (collision.gameObject.tag == "Ghost"){
-            if (health > 0){
+        	bool val = collision.gameObject.GetComponent<Target1>().GetStun(); 
+            if (health > 0 && !val){
                 health = health - 5;
                 healthManager.UpdateHealth(health);
             }
         }
-/*        if (collision.gameObject.tag == "Knight"){
-            if (health > 0){
-                health = health - 10;
-            }
-        }*/
+        // boss 
         if (collision.gameObject.tag == "Boss"){
             if (health > 0){
                 health = health - 15;
@@ -256,19 +230,8 @@ public class CharacterController1 : MonoBehaviour
         Collider[] hitColliders = Physics.OverlapSphere(center, radius);
         foreach (var hitCollider in hitColliders)
         {
-        	if (hitCollider.gameObject.tag == "Target"){
-                // https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html
-                hitCollider.SendMessage("DecreaseImmunity");
-            }
+        	// stun ghosts
             if (hitCollider.gameObject.tag == "Ghost"){
-                // https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html
-                hitCollider.SendMessage("DecreaseImmunity");
-            }
-            if (hitCollider.gameObject.tag == "Knight"){
-                // https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html
-                hitCollider.SendMessage("DecreaseImmunity");
-            }
-            if (hitCollider.gameObject.tag == "Boss"){
                 // https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html
                 hitCollider.SendMessage("DecreaseImmunity");
             }

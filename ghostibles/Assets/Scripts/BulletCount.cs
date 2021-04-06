@@ -12,27 +12,14 @@ public class BulletCount : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // first bullet message
         bullet.text = "Bullets Left: " + maxBullet;
-        // print("start point" + total_score);
     }
 
+    // called by Character Controller to update number of bullets
     public void UpdateBullets(int count){
         maxBullet = count;
         bullet.text = "Bullets Left: " + maxBullet;
 
     }
-
-    /*//Add bullet. Called from Target.cs
-    public void AddBullet(int count){
-        print("AT ADDBULLET" + maxBullet);
-        maxBullet += count;
-        print("MAXB "+ maxBullet);
-        //Start();
-    }
-
-    public void MinusBullet(int bullets)
-    {
-              
-        bullet.text = "Bullets Left: " + bullets;
-    }*/
 }
