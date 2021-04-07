@@ -113,6 +113,7 @@ public class Target1 : MonoBehaviour
       public void StartChasing()
       {
           chasing = true;
+          GetComponent<AudioSource>().Play();
       }
     
       public void StopChasing()
