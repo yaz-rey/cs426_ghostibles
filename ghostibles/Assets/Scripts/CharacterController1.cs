@@ -27,16 +27,22 @@ public class CharacterController1 : MonoBehaviour
 
 	public int health = 150;
 
+	private 
+
 	// stun attack
-    public float stunInterval = 1;
-    private bool stun = false;
+    float stunInterval = 1;
+    bool stun = false;
 
 	//Audio clips
 	public AudioSource gunShot;
 	public AudioSource guitarClip;
 
+	public AudioClip doorOpen; 
+
 	private bool guitarPlaying = false;
 	private bool gunBlast = false;
+
+	private bool doorOpening = false;
 
 	private bool hasGem = false;
 
@@ -44,6 +50,7 @@ public class CharacterController1 : MonoBehaviour
 	public BulletCount bulletManager;
 	public Health healthManager;
 
+	public AudioSource audio;
 
 	// Start is called before the first frame update
 	void Start()
@@ -57,6 +64,9 @@ public class CharacterController1 : MonoBehaviour
 		gunShot = sounds[0];
 		
 		guitarClip = sounds[1];
+
+		audio = GetComponent<AudioSource>();
+
 		//Start of with no sounds
 		gunShot.Stop();
 		guitarClip.Stop();
@@ -222,6 +232,15 @@ public class CharacterController1 : MonoBehaviour
 			bulletManager.UpdateBullets(bulletCount);
 
 		}
+		if(collision.gameObject.tag == "Door") {
+			audio.clip = doorOpen;
+			audio.Play();
+		}
+		else {
+			audio.Stop();
+		}
+
+		
     }
 
     // https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html
