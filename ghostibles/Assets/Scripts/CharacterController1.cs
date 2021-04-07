@@ -51,6 +51,8 @@ public class CharacterController1 : MonoBehaviour
 	public Health healthManager;
 
 	public AudioSource audio;
+	public AudioSource[] sounds;
+	public AudioSource permaGun;
 
 	// Start is called before the first frame update
 	void Start()
@@ -60,16 +62,18 @@ public class CharacterController1 : MonoBehaviour
 		anim = GetComponent<Animator>();
 		//https://answers.unity.com/questions/175995/can-i-play-multiple-audiosources-from-one-gameobje.html
 		//https://www.youtube.com/watch?v=jFjg2iwuF1s
-		AudioSource[] sounds = GetComponents<AudioSource>();
+		sounds = GetComponents<AudioSource>();
 		gunShot = sounds[0];
+		
 		
 		guitarClip = sounds[1];
 
-		audio = GetComponent<AudioSource>();
+		audio = sounds[2];
 
 		//Start of with no sounds
 		gunShot.Stop();
 		guitarClip.Stop();
+		audio.Stop();
 	}
 
 	// Update is called once per frame
@@ -118,6 +122,7 @@ public class CharacterController1 : MonoBehaviour
 
 		if (Input.GetButtonDown("Fire1") && weapon.Equals("gun")){
 			if(bulletCount > 0){
+				gunShot = sounds[0];
 				gunShot.Play();//Play gun shot sound as long as we have bullets
 			}
 			
@@ -175,7 +180,8 @@ public class CharacterController1 : MonoBehaviour
                 // enable attack
                 Debug.Log("Enabled Attack");
 				stun = true; 
-				
+
+				guitarClip = sounds[1];
 				guitarClip.Play();
 				Debug.Log("Play Music");
             }
@@ -233,10 +239,11 @@ public class CharacterController1 : MonoBehaviour
 
 		}
 		if(collision.gameObject.tag == "Door") {
-			audio.clip = doorOpen;
+			audio = sounds[2];
 			audio.Play();
 		}
 		else {
+			Debug.Log("AUDIO STOP");
 			audio.Stop();
 		}
 
