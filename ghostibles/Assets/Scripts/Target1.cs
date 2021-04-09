@@ -119,6 +119,7 @@ public class Target1 : MonoBehaviour
       public void StopChasing()
       {
           chasing = false;
+          GetComponent<AudioSource>().Stop();
       }
     
       private void rotateGhost()
