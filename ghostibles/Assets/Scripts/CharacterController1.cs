@@ -49,6 +49,7 @@ public class CharacterController1 : MonoBehaviour
 
 	public BulletCount bulletManager;
 	public Health healthManager;
+	public WeaponIconManager wiManager;
 
 	public AudioSource audio;
 	public AudioSource[] sounds;
@@ -80,10 +81,12 @@ public class CharacterController1 : MonoBehaviour
 	void Update(){
 
 		if (Input.GetKey(KeyCode.Alpha1)){
+			wiManager.ChooseGun();
 			weapon = "gun";
 			Debug.Log("Weapon: GUN");
 		}
 		if (Input.GetKey(KeyCode.Alpha2)){
+			wiManager.ChooseInstr();
 			weapon = "instr";
 			Debug.Log("Weapon: INSTRUMENT");
 		}
