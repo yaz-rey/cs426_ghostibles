@@ -104,6 +104,9 @@ public class CharacterController1 : MonoBehaviour
 				wiManager.ChooseGun();
 				weapon = "gun";
 				Debug.Log("Weapon: GUN");
+				stun = false;
+				guitarClip.Stop();
+
 			}
 			if (Input.GetKey(KeyCode.Alpha2)){
 				wiManager.ChooseInstr();
@@ -203,7 +206,6 @@ public class CharacterController1 : MonoBehaviour
 				
 				guitarClip.Stop();
 				Debug.Log("Stop Music");
-				anim.SetBool("Play",false);
 				//Disable animation
 
             }
