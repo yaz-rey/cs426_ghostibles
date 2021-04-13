@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;//For End Scene
-using UnityEngine.SceneManagement;//Restarting the scene
 
 public class CharacterController1 : MonoBehaviour
 {
@@ -51,21 +49,15 @@ public class CharacterController1 : MonoBehaviour
 
 	public BulletCount bulletManager;
 	public Health healthManager;
+	public WeaponIconManager wiManager;
 
 	public AudioSource audio;
 	public AudioSource[] sounds;
 	public AudioSource permaGun;
 
-	//Game over scene, hopefully
-	public Image endScene;
-	public Text gameOver;
-	public Button restart;
-	//public event EventHandler lost;
-
 	// Start is called before the first frame update
 	void Start()
 	{
-		restart.onClick.AddListener(RestartButton);
 		rb = GetComponent<Rigidbody>();
 		t = GetComponent<Transform>();
 		anim = GetComponent<Animator>();
@@ -89,10 +81,12 @@ public class CharacterController1 : MonoBehaviour
 	void Update(){
 
 		if (Input.GetKey(KeyCode.Alpha1)){
+			wiManager.ChooseGun();
 			weapon = "gun";
 			Debug.Log("Weapon: GUN");
 		}
 		if (Input.GetKey(KeyCode.Alpha2)){
+			wiManager.ChooseInstr();
 			weapon = "instr";
 			Debug.Log("Weapon: INSTRUMENT");
 		}
@@ -137,9 +131,6 @@ public class CharacterController1 : MonoBehaviour
 			
 			anim.SetTrigger("Shoot");
 			startTime = true;
-		}
-		if(Input.GetKeyDown(KeyCode.R) && health <= 0){
-			RestartButton();
 		}
 		//Turn off the gun sound
 		if (Input.GetButtonDown("Fire1") && weapon.Equals("gun") == false){
@@ -233,13 +224,6 @@ public class CharacterController1 : MonoBehaviour
                 health = health - 5;
                 healthManager.UpdateHealth(health);
             }
-			if(health <= 0){
-				//Destroy(gameObject); Causes some kind of camera error, restart button won't work
-				endScene.gameObject.SetActive(true);
-				restart.gameObject.SetActive(true);
-			
-			}
-			
         }
         // boss 
         if (collision.gameObject.tag == "Boss"){
@@ -247,12 +231,6 @@ public class CharacterController1 : MonoBehaviour
                 health = health - 15;
                 healthManager.UpdateHealth(health);
             }
-			if(health <= 0){
-				//Destroy(gameObject); 
-				endScene.gameObject.SetActive(true);
-				restart.gameObject.SetActive(true);
-			
-			}
         }
 		if (collision.gameObject.tag == "Gem") {
 			hasGem = true;
@@ -266,8 +244,7 @@ public class CharacterController1 : MonoBehaviour
 		if(collision.gameObject.tag == "Door") {
 			audio = sounds[2];
 			audio.Play();
-		}		
-
+		}
 		else {
 			Debug.Log("AUDIO STOP");
 			audio.Stop();
@@ -275,12 +252,6 @@ public class CharacterController1 : MonoBehaviour
 
 		
     }
-
-	//Restart button: https://www.youtube.com/watch?v=K4uOjb5p3Io
-	public void RestartButton()
-	{
-		SceneManager.LoadScene("SampleScene");
-	} 
 
     // https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html
     void CheckGhosts(Vector3 center, float radius)
