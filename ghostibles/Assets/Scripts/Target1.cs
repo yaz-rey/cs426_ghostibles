@@ -172,7 +172,7 @@ public class Target1 : MonoBehaviour
             // increase ghost hits
                 print("GHOST "+gameObject.tag);
                 ghostHitPts += 1;
-
+                //When normal ghosts die; Boss ghost is on Movement.cs
                 if(ghostHitPts == 3){
                     // drop ammo once dead
                     GameObject ammo = GameObject.Instantiate(myPrefab, transform.position, transform.rotation) as GameObject;

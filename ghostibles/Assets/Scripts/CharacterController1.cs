@@ -62,6 +62,12 @@ public class CharacterController1 : MonoBehaviour
 	public Text gameOver;
 	public Button restart;
 	public bool gameIsOver = false;
+
+	//Won game scene, hopefully
+	public Image winScene;
+	public Text wonGame;
+	public Button replay;
+	public bool gameWon = false;
 	
 	public HealthBar healthBar;
 
@@ -156,9 +162,19 @@ public class CharacterController1 : MonoBehaviour
 				startTime = true;
 			}
 		}
-
+		//When player dies
 		if(Input.GetKeyDown(KeyCode.R) && health <= 0){
 			RestartButton();
+		}
+		//When player wins
+		if(Input.GetKeyDown(KeyCode.R) && gameWon){
+			RestartButton();
+		}
+		//Win scene: when boss killed & two big gems collected. Might change to include smaller bits
+		if(GameObject.FindGameObjectsWithTag("Gem").Length == 0 && GameObject.FindGameObjectsWithTag("Boss").Length == 0){
+			winScene.gameObject.SetActive(true);
+			replay.gameObject.SetActive(true);
+			gameWon = true;
 		}
 
 		if(!gameIsOver){
@@ -259,7 +275,7 @@ public class CharacterController1 : MonoBehaviour
 				//Destroy(gameObject); Causes some kind of camera error, restart button won't work
 				endScene.gameObject.SetActive(true);
 				restart.gameObject.SetActive(true);
-				Camera.main.transform.parent = null;
+				Camera.main.transform.parent = null;//Oh this fixes camera error, but then can't click on restart button, it doesn't works - who would of thought :/
 				gameIsOver = true;
 				//Destroy(gameObject);DESTOYS AMY ,BUT THEN CAN'T CLICK TO RESTART, W LOSE OBJECT I'M ASSUMMING
 			
