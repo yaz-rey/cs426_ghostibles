@@ -28,7 +28,7 @@ public class CharacterController1 : MonoBehaviour
 	// weapons: gun, instr
 	string weapon = "gun"; 
 
-	public int health = 150;
+	public int health = 100;
 
 	private 
 
@@ -51,7 +51,6 @@ public class CharacterController1 : MonoBehaviour
 
 
 	public BulletCount bulletManager;
-	public Health healthManager;
 	public WeaponIconManager wiManager;
 
 	public AudioSource audio;
@@ -63,6 +62,9 @@ public class CharacterController1 : MonoBehaviour
 	public Text gameOver;
 	public Button restart;
 	public bool gameIsOver = false;
+	
+	public HealthBar healthBar;
+
 	//public event EventHandler lost;
 
 	// Start is called before the first frame update
@@ -86,6 +88,9 @@ public class CharacterController1 : MonoBehaviour
 		gunShot.Stop();
 		guitarClip.Stop();
 		audio.Stop();
+
+		// Sets maximum value for health bar 
+		healthBar.setMaxHealth(health);
 	}
 
 	// Update is called once per frame
@@ -241,7 +246,7 @@ public class CharacterController1 : MonoBehaviour
         	bool val = collision.gameObject.GetComponent<Target1>().GetStun(); 
             if (health > 0 && !val){
                 health = health - 5;
-                healthManager.UpdateHealth(health);
+                healthBar.setHealth(health);
             }
 			//Player dies, game over scene displays
 			if(health <= 0){
@@ -258,7 +263,7 @@ public class CharacterController1 : MonoBehaviour
         if (collision.gameObject.tag == "Boss"){
             if (health > 0){
                 health = health - 15;
-                healthManager.UpdateHealth(health);
+                healthBar.setHealth(health);
             }
 			//Player dies, game over scene displays
 			if(health <= 0){
