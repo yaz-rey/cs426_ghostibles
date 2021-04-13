@@ -54,6 +54,24 @@ public class CharacterController1 : MonoBehaviour
 	public WeaponIconManager wiManager;
 
 	public AudioSource audio;
+
+	public AudioSource background;
+	public AudioClip ambientMansion;
+
+	public AudioSource self;
+	public AudioClip pain;
+	public AudioClip laugh;
+	public AudioClip cool;
+
+
+
+	public AudioSource collis;
+	public AudioClip gemCollect;
+	public AudioClip crystalCollect;
+	public AudioClip ammoCollect;
+
+
+
 	public AudioSource[] sounds;
 	public AudioSource permaGun;
 
@@ -91,6 +109,11 @@ public class CharacterController1 : MonoBehaviour
 		guitarClip = sounds[1];
 
 		audio = sounds[2];
+
+		background = sounds[3];
+		self = sounds[4];
+		collis = sounds[5];
+
 
 		//Start of with no sounds
 		gunShot.Stop();
@@ -263,10 +286,21 @@ public class CharacterController1 : MonoBehaviour
 	// https://answers.unity.com/questions/862880/disable-jumping-more-than-once.html
     // Used tag to identity different grounds in which to allow jumping 
     private void OnCollisionEnter(Collision collision){
+    	if (collision.gameObject.tag == "Mansion"){
+    		if (background.isPlaying && background.clip != ambientMansion){
+    			background.Stop();
+    			background.volume = 0.4f;
+    			background.clip = ambientMansion;
+    			background.Play();
+    		}
+    		
+    	}
         // check if stunned ghost is trying to push against you
         if (collision.gameObject.tag == "Ghost"){
         	bool val = collision.gameObject.GetComponent<Target1>().GetStun(); 
             if (health > 0 && !val){
+            	self.clip = pain;
+            	self.Play();
                 health = health - 5;
                 healthBar.setHealth(health);
             }
@@ -284,6 +318,9 @@ public class CharacterController1 : MonoBehaviour
         // boss 
         if (collision.gameObject.tag == "Boss"){
             if (health > 0){
+            	self.clip = pain;
+            	self.Play();
+
                 health = health - 15;
                 healthBar.setHealth(health);
             }
@@ -299,9 +336,27 @@ public class CharacterController1 : MonoBehaviour
 			}
         }
 		if (collision.gameObject.tag == "Gem") {
+			self.clip = laugh;
+			self.Play();
+			collis.clip = gemCollect;
+			collis.Play();
 			hasGem = true;
 		}
+		if (collision.gameObject.tag == "Crystal"){
+			self.clip = laugh;
+			self.Play();
+			collis.clip = crystalCollect;
+			collis.Play();
+			if (health > 0){
+				health += 10;
+				healthBar.setHealth(health);
+			}
+		}
 		if (collision.gameObject.tag == "Ammo"){
+			self.clip = cool;
+			self.Play();
+			collis.clip = ammoCollect;
+			collis.Play();
 			bulletCount += 2;
 			Debug.Log("Number of bullets now: " + bulletCount);
 			bulletBar.setBullets(bulletCount);
