@@ -347,6 +347,10 @@ public class CharacterController1 : MonoBehaviour
 			self.Play();
 			collis.clip = crystalCollect;
 			collis.Play();
+			if (health > 0){
+				health += 10;
+				healthBar.setHealth(health);
+			}
 		}
 		if (collision.gameObject.tag == "Ammo"){
 			self.clip = cool;
