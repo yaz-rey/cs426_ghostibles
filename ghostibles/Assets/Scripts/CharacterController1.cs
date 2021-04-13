@@ -50,7 +50,7 @@ public class CharacterController1 : MonoBehaviour
 	private bool hasGem = false;
 
 
-	public BulletCount bulletManager;
+	//public BulletCount bulletManager;
 	public WeaponIconManager wiManager;
 
 	public AudioSource audio;
@@ -64,6 +64,8 @@ public class CharacterController1 : MonoBehaviour
 	public bool gameIsOver = false;
 	
 	public HealthBar healthBar;
+
+	public BulletBar bulletBar;
 
 	//public event EventHandler lost;
 
@@ -91,6 +93,8 @@ public class CharacterController1 : MonoBehaviour
 
 		// Sets maximum value for health bar 
 		healthBar.setMaxHealth(health);
+		// Sets maximum value for bullet bar
+		bulletBar.setMaxBullets(bulletCount);
 	}
 
 	// Update is called once per frame
@@ -179,7 +183,7 @@ public class CharacterController1 : MonoBehaviour
 					newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 2;
 					newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
 					bulletCount--;
-					bulletManager.UpdateBullets(bulletCount);
+					bulletBar.setBullets(bulletCount);
 					print(bulletCount + " Left");
 				}
 				startTime = false;
@@ -282,7 +286,7 @@ public class CharacterController1 : MonoBehaviour
 		if (collision.gameObject.tag == "Ammo"){
 			bulletCount += 2;
 			Debug.Log("Number of bullets now: " + bulletCount);
-			bulletManager.UpdateBullets(bulletCount);
+			bulletBar.setBullets(bulletCount);
 
 		}
 		if(collision.gameObject.tag == "Door") {
