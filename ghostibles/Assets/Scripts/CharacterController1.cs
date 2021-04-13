@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;//For End Scene
+using UnityEngine.SceneManagement;//Restarting the scene
+
 
 public class CharacterController1 : MonoBehaviour
 {
@@ -55,9 +58,17 @@ public class CharacterController1 : MonoBehaviour
 	public AudioSource[] sounds;
 	public AudioSource permaGun;
 
+	//Game over scene, hopefully
+	public Image endScene;
+	public Text gameOver;
+	public Button restart;
+	public bool gameIsOver = false;
+	//public event EventHandler lost;
+
 	// Start is called before the first frame update
 	void Start()
 	{
+		restart.onClick.AddListener(RestartButton);//Doesn't really work, but I left it!
 		rb = GetComponent<Rigidbody>();
 		t = GetComponent<Transform>();
 		anim = GetComponent<Animator>();
@@ -79,64 +90,72 @@ public class CharacterController1 : MonoBehaviour
 
 	// Update is called once per frame
 	void Update(){
-
-		if (Input.GetKey(KeyCode.Alpha1)){
-			wiManager.ChooseGun();
-			weapon = "gun";
-			Debug.Log("Weapon: GUN");
-		}
-		if (Input.GetKey(KeyCode.Alpha2)){
-			wiManager.ChooseInstr();
-			weapon = "instr";
-			Debug.Log("Weapon: INSTRUMENT");
-		}
-
-		if (Input.GetKey(KeyCode.W)){
-			rb.velocity += this.transform.forward * speed * Time.deltaTime;
-		}
-
-		
-		else if (Input.GetKey(KeyCode.S)){
-			rb.velocity -= this.transform.forward * speed * Time.deltaTime;
-		}
-
-
-		if (Input.GetKey(KeyCode.D)){
-			anim.SetBool("RightTurn",true);
-			t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
-			
-		}
-		if(Input.GetKey(KeyCode.D) == false){
-			anim.SetBool("RightTurn", false);
-		}
-		//Deleted else if for this so the player can move left or not if 'A' is being clicked on
-		if (Input.GetKey(KeyCode.A)){
-			anim.SetBool("LeftTurn",true);
-			t.rotation *= Quaternion.Euler(0, - rotationSpeed * Time.deltaTime, 0);
-			
-		}
-		if(Input.GetKey(KeyCode.A) == false){
-			anim.SetBool("LeftTurn", false);
-		}
-
-		if (Input.GetKeyDown(KeyCode.Space)){
-			rb.AddForce(t.up * force);
-		}
-
-		if (Input.GetButtonDown("Fire1") && weapon.Equals("gun")){
-			if(bulletCount > 0){
-				gunShot = sounds[0];
-				gunShot.Play();//Play gun shot sound as long as we have bullets
+		if(!gameIsOver){
+			if (Input.GetKey(KeyCode.Alpha1)){
+				wiManager.ChooseGun();
+				weapon = "gun";
+				Debug.Log("Weapon: GUN");
 			}
+			if (Input.GetKey(KeyCode.Alpha2)){
+				wiManager.ChooseInstr();
+				weapon = "instr";
+				Debug.Log("Weapon: INSTRUMENT");
+			}
+
+			if (Input.GetKey(KeyCode.W)){
+				rb.velocity += this.transform.forward * speed * Time.deltaTime;
+			}
+
 			
-			anim.SetTrigger("Shoot");
-			startTime = true;
+			else if (Input.GetKey(KeyCode.S)){
+				rb.velocity -= this.transform.forward * speed * Time.deltaTime;
+			}
+
+
+			if (Input.GetKey(KeyCode.D)){
+				anim.SetBool("RightTurn",true);
+				t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+				
+			}
+			if(Input.GetKey(KeyCode.D) == false){
+				anim.SetBool("RightTurn", false);
+			}
+			//Deleted else if for this so the player can move left or not if 'A' is being clicked on
+			if (Input.GetKey(KeyCode.A)){
+				anim.SetBool("LeftTurn",true);
+				t.rotation *= Quaternion.Euler(0, - rotationSpeed * Time.deltaTime, 0);
+				
+			}
+			if(Input.GetKey(KeyCode.A) == false){
+				anim.SetBool("LeftTurn", false);
+			}
+
+			if (Input.GetKeyDown(KeyCode.Space)){
+				rb.AddForce(t.up * force);
+			}
+
+			if (Input.GetButtonDown("Fire1") && weapon.Equals("gun")){
+				if(bulletCount > 0){
+					gunShot = sounds[0];
+					gunShot.Play();//Play gun shot sound as long as we have bullets
+				}
+				
+				anim.SetTrigger("Shoot");
+				startTime = true;
+			}
 		}
-		//Turn off the gun sound
-		if (Input.GetButtonDown("Fire1") && weapon.Equals("gun") == false){
-		
-			gunShot.Stop();//Play gun shot sound as long as we have bullets
+
+		if(Input.GetKeyDown(KeyCode.R) && health <= 0){
+			RestartButton();
+		}
+
+		if(!gameIsOver){
+			//Turn off the gun sound
+			if (Input.GetButtonDown("Fire1") && weapon.Equals("gun") == false){
 			
+				gunShot.Stop();//Play gun shot sound as long as we have bullets
+				
+			}
 		}
 
 		// align shooting with the animation
@@ -224,6 +243,16 @@ public class CharacterController1 : MonoBehaviour
                 health = health - 5;
                 healthManager.UpdateHealth(health);
             }
+			//Player dies, game over scene displays
+			if(health <= 0){
+				//Destroy(gameObject); Causes some kind of camera error, restart button won't work
+				endScene.gameObject.SetActive(true);
+				restart.gameObject.SetActive(true);
+				Camera.main.transform.parent = null;
+				gameIsOver = true;
+				//Destroy(gameObject);DESTOYS AMY ,BUT THEN CAN'T CLICK TO RESTART, W LOSE OBJECT I'M ASSUMMING
+			
+			}
         }
         // boss 
         if (collision.gameObject.tag == "Boss"){
@@ -231,6 +260,16 @@ public class CharacterController1 : MonoBehaviour
                 health = health - 15;
                 healthManager.UpdateHealth(health);
             }
+			//Player dies, game over scene displays
+			if(health <= 0){
+				//Destroy(gameObject); Causes some kind of camera error, restart button won't work
+				endScene.gameObject.SetActive(true);
+				restart.gameObject.SetActive(true);
+				Camera.main.transform.parent = null;
+				gameIsOver = true;
+				//Destroy(gameObject); DESTOYS AMY ,BUT THEN CAN'T CLICK TO RESTART, W LOSE OBJECT I'M ASSUMMING
+			
+			}
         }
 		if (collision.gameObject.tag == "Gem") {
 			hasGem = true;
@@ -252,6 +291,12 @@ public class CharacterController1 : MonoBehaviour
 
 		
     }
+
+	//Restart button: https://www.youtube.com/watch?v=K4uOjb5p3Io
+	public void RestartButton()
+	{
+		SceneManager.LoadScene("SampleScene");
+	} 
 
     // https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html
     void CheckGhosts(Vector3 center, float radius)
