@@ -26721,11 +26721,13 @@ MonoBehaviour:
   background: {fileID: 0}
   ambientMansion: {fileID: 8300000, guid: 2f368744611899c4cad9d94e710a3ece, type: 3}
   self: {fileID: 0}
-  pain: {fileID: 0}
+  pain: {fileID: 8300000, guid: bc446e465860a46189d7c2a6866dd6b3, type: 3}
+  laugh: {fileID: 8300000, guid: 97778c26777d640a18971efa3990b44e, type: 3}
+  cool: {fileID: 8300000, guid: 37e46fdf8f7c94e88ab2ca216a4d5bf2, type: 3}
   collis: {fileID: 0}
   gemCollect: {fileID: 8300000, guid: d4857160bcee54a08b54ff3b22c42ffc, type: 3}
   crystalCollect: {fileID: 8300000, guid: 88bd70e8611324badbe283ac35def718, type: 3}
-  ammoCollect: {fileID: 0}
+  ammoCollect: {fileID: 8300000, guid: 5e18a8604e6874d56a1ad41299b5e7b6, type: 3}
   sounds: []
   permaGun: {fileID: 0}
   endScene: {fileID: 1667181069}

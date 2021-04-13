@@ -60,6 +60,10 @@ public class CharacterController1 : MonoBehaviour
 
 	public AudioSource self;
 	public AudioClip pain;
+	public AudioClip laugh;
+	public AudioClip cool;
+
+
 
 	public AudioSource collis;
 	public AudioClip gemCollect;
@@ -295,6 +299,7 @@ public class CharacterController1 : MonoBehaviour
         if (collision.gameObject.tag == "Ghost"){
         	bool val = collision.gameObject.GetComponent<Target1>().GetStun(); 
             if (health > 0 && !val){
+            	self.clip = pain;
             	self.Play();
                 health = health - 5;
                 healthBar.setHealth(health);
@@ -313,6 +318,7 @@ public class CharacterController1 : MonoBehaviour
         // boss 
         if (collision.gameObject.tag == "Boss"){
             if (health > 0){
+            	self.clip = pain;
             	self.Play();
 
                 health = health - 15;
@@ -330,15 +336,27 @@ public class CharacterController1 : MonoBehaviour
 			}
         }
 		if (collision.gameObject.tag == "Gem") {
+			self.clip = laugh;
+			self.Play();
 			collis.clip = gemCollect;
 			collis.Play();
 			hasGem = true;
 		}
 		if (collision.gameObject.tag == "Crystal"){
+			self.clip = laugh;
+			self.Play();
 			collis.clip = crystalCollect;
 			collis.Play();
+			if (health > 0){
+				health += 10;
+				healthBar.setHealth(health);
+			}
 		}
 		if (collision.gameObject.tag == "Ammo"){
+			self.clip = cool;
+			self.Play();
+			collis.clip = ammoCollect;
+			collis.Play();
 			bulletCount += 2;
 			Debug.Log("Number of bullets now: " + bulletCount);
 			bulletBar.setBullets(bulletCount);
