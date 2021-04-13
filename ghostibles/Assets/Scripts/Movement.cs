@@ -38,12 +38,12 @@ public class Movement : MonoBehaviour
         if(Vector3.Distance(lastPosition, transform.position) < 0.0001)
         {
             animator.SetFloat("vel", 0);
-            print("setting 0");
+            //print("setting 0");
         }
         else
         {
             animator.SetFloat("vel", 1);
-            print("setting 1");
+            //print("setting 1");
         }
         
         lastPosition = transform.position;
