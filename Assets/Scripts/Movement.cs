@@ -38,16 +38,16 @@ public class Movement : MonoBehaviour
         if(Vector3.Distance(lastPosition, transform.position) < 0.0001)
         {
             animator.SetFloat("vel", 0);
-            print("setting 0");
+            //print("setting 0");
         }
         else
         {
             animator.SetFloat("vel", 1);
-            print("setting 1");
+            //print("setting 1");
         }
         
         lastPosition = transform.position;
-
+        //When Boss ghost dies; normal ghost is on Target1.cs
         if (health == 0){
             GameObject ammo = GameObject.Instantiate(ammunition, transform.position, transform.rotation) as GameObject;
             ammo.tag = "Ammo";
