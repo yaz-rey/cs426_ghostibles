@@ -39,7 +39,7 @@ public class Target1 : MonoBehaviour
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 
         anim = GetComponent<Animator>();  
-        int randomNum = Random.Range(0,8);
+        int randomNum = Random.Range(0,waypoints.Count);
         Debug.Log("RANDNUM "+ randomNum);
         targetWaypointIndex = randomNum;
         targetWaypoint = waypoints[targetWaypointIndex];//Start heading to a random waypoint
@@ -76,12 +76,12 @@ public class Target1 : MonoBehaviour
     void GetRandomNumber()
     {
         int currWaypointIdx = targetWaypointIndex;//Make a temp of current waypoint index
-        targetWaypointIndex = Random.Range(0,8);//Update a new waypoint index randomly
+        targetWaypointIndex = Random.Range(0,waypoints.Count);//Update a new waypoint index randomly
 
         //Make sure the new waypoint isn't the same to the previous current waypoint destination  
         while(currWaypointIdx == targetWaypointIndex)
         {
-            targetWaypointIndex = Random.Range(0,8);
+            targetWaypointIndex = Random.Range(0,waypoints.Count);
         }
     }
 
@@ -119,6 +119,7 @@ public class Target1 : MonoBehaviour
       public void StopChasing()
       {
           chasing = false;
+          GetComponent<AudioSource>().Stop();
       }
     
       private void rotateGhost()
@@ -171,7 +172,7 @@ public class Target1 : MonoBehaviour
             // increase ghost hits
                 print("GHOST "+gameObject.tag);
                 ghostHitPts += 1;
-
+                //When normal ghosts die; Boss ghost is on Movement.cs
                 if(ghostHitPts == 3){
                     // drop ammo once dead
                     GameObject ammo = GameObject.Instantiate(myPrefab, transform.position, transform.rotation) as GameObject;
