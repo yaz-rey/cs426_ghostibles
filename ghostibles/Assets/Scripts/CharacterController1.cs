@@ -60,10 +60,14 @@ public class CharacterController1 : MonoBehaviour
 	public AudioSource background;
 	public AudioClip ambientMansion;
 
+	public AudioClip bossMusic;
+
 	public AudioSource self;
 	public AudioClip pain;
 	public AudioClip laugh;
 	public AudioClip cool;
+
+	public AudioClip footStep;
 
 
 
@@ -72,6 +76,7 @@ public class CharacterController1 : MonoBehaviour
 	public AudioClip crystalCollect;
 	public AudioClip ammoCollect;
 
+	public AudioSource steps;
 
 
 	public AudioSource[] sounds;
@@ -94,9 +99,15 @@ public class CharacterController1 : MonoBehaviour
 
 	public BulletBar bulletBar;
 
+	private bool fightingBoss = false;
+
 	//public event EventHandler lost;
 
 	// Start is called before the first frame update
+
+	private void Step() {
+		steps.Play();
+	}
 	void Start()
 	{
 		restart.onClick.AddListener(RestartButton);//Doesn't really work, but I left it!
@@ -119,6 +130,7 @@ public class CharacterController1 : MonoBehaviour
 		collis = sounds[5];
 		losingLaugh = sounds[6];
 		winningMusic = sounds[7];
+		steps = sounds[8];
 
 
 		//Start of with no sounds
@@ -151,8 +163,14 @@ public class CharacterController1 : MonoBehaviour
 				Debug.Log("Weapon: INSTRUMENT");
 			}
 
-			if (Input.GetKey(KeyCode.W)){
+			if (Input.GetKey(KeyCode.W)) 
+			{
 				rb.velocity += this.transform.forward * speed * Time.deltaTime;
+				anim.SetBool("Walk", true);
+			}
+			else if (!Input.GetKey(KeyCode.W))
+			{
+				anim.SetBool("Walk", false);
 			}
 
 			
@@ -191,6 +209,14 @@ public class CharacterController1 : MonoBehaviour
 				
 				anim.SetTrigger("Shoot");
 				startTime = true;
+			}
+			if(fightingBoss) {
+				if (background.isPlaying && background.clip != bossMusic){
+    				background.Stop();
+    				background.volume = 0.7f;
+    				background.clip = bossMusic;
+    				background.Play();
+    			}
 			}
 		}
 		//When player dies
@@ -252,7 +278,6 @@ public class CharacterController1 : MonoBehaviour
 				attackInterval = 0.2f;
 
 			}
-
 		}
 
 		// https://answers.unity.com/questions/797799/help-with-on-off-toggle-c.html
@@ -366,6 +391,7 @@ public class CharacterController1 : MonoBehaviour
 			}
         }
 		if (collision.gameObject.tag == "Gem") {
+			fightingBoss = true;
 			self.clip = laugh;
 			self.Play();
 			collis.clip = gemCollect;
