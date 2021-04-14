@@ -39,6 +39,8 @@ public class CharacterController1 : MonoBehaviour
 	//Audio clips
 	public AudioSource gunShot;
 	public AudioSource guitarClip;
+	public AudioSource losingLaugh;
+	
 
 	public AudioClip doorOpen; 
 
@@ -74,6 +76,7 @@ public class CharacterController1 : MonoBehaviour
 
 	public AudioSource[] sounds;
 	public AudioSource permaGun;
+	public AudioSource winningMusic;
 
 	//Game over scene, hopefully
 	public Image endScene;
@@ -97,6 +100,7 @@ public class CharacterController1 : MonoBehaviour
 	void Start()
 	{
 		restart.onClick.AddListener(RestartButton);//Doesn't really work, but I left it!
+		replay.onClick.AddListener(RestartButton);
 		rb = GetComponent<Rigidbody>();
 		t = GetComponent<Transform>();
 		anim = GetComponent<Animator>();
@@ -113,12 +117,16 @@ public class CharacterController1 : MonoBehaviour
 		background = sounds[3];
 		self = sounds[4];
 		collis = sounds[5];
+		losingLaugh = sounds[6];
+		winningMusic = sounds[7];
 
 
 		//Start of with no sounds
 		gunShot.Stop();
 		guitarClip.Stop();
 		audio.Stop();
+		losingLaugh.Stop();
+		winningMusic.Stop();
 
 		// Sets maximum value for health bar 
 		healthBar.setMaxHealth(health);
@@ -128,7 +136,7 @@ public class CharacterController1 : MonoBehaviour
 
 	// Update is called once per frame
 	void Update(){
-		if(!gameIsOver){
+		if(!gameIsOver || !gameWon){
 			if (Input.GetKey(KeyCode.Alpha1)){
 				wiManager.ChooseGun();
 				weapon = "gun";
@@ -193,11 +201,23 @@ public class CharacterController1 : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.R) && gameWon){
 			RestartButton();
 		}
+		if(gameWon){
+			//winningMusic.Play();
+		}
 		//Win scene: when boss killed & two big gems collected. Might change to include smaller bits
 		if(GameObject.FindGameObjectsWithTag("Gem").Length == 0 && GameObject.FindGameObjectsWithTag("Boss").Length == 0){
+			
 			winScene.gameObject.SetActive(true);
 			replay.gameObject.SetActive(true);
+			gunShot.Stop();
+			guitarClip.Stop();
+			audio.Stop();
+			losingLaugh.Stop();
+			// winningMusic = sounds[7];
+			// winningMusic.Play();
 			gameWon = true;
+			gameIsOver = true;
+			PlayMusic();
 		}
 
 		if(!gameIsOver){
@@ -282,7 +302,15 @@ public class CharacterController1 : MonoBehaviour
         }
 	}
 
-
+	public int playWin = 0;
+	public void PlayMusic(){
+		while(playWin < 5){
+			winningMusic.Play();
+			playWin = playWin + 1;
+		}
+		
+		//winningMusic.Play();
+	}
 	// https://answers.unity.com/questions/862880/disable-jumping-more-than-once.html
     // Used tag to identity different grounds in which to allow jumping 
     private void OnCollisionEnter(Collision collision){
@@ -307,11 +335,12 @@ public class CharacterController1 : MonoBehaviour
 			//Player dies, game over scene displays
 			if(health <= 0){
 				//Destroy(gameObject); Causes some kind of camera error, restart button won't work
-				endScene.gameObject.SetActive(true);
-				restart.gameObject.SetActive(true);
-				Camera.main.transform.parent = null;//Oh this fixes camera error, but then can't click on restart button, it doesn't works - who would of thought :/
+				endScene.gameObject.SetActive(true);//Makie the end scene active once you die
+				restart.gameObject.SetActive(true);//Also the restart button
+				losingLaugh.Play();
+				Camera.main.transform.parent = null;//Oh this fixes camera error, restart button suddenly works - who would of thought
 				gameIsOver = true;
-				//Destroy(gameObject);DESTOYS AMY ,BUT THEN CAN'T CLICK TO RESTART, W LOSE OBJECT I'M ASSUMMING
+				//Destroy(gameObject);DESTOYS AMY ,BUT THEN CAN'T CLICK TO RESTART, WE LOSE OBJECT WITH THE SCRIPT'S CODE I'M ASSUMMING
 			
 			}
         }
@@ -329,6 +358,7 @@ public class CharacterController1 : MonoBehaviour
 				//Destroy(gameObject); Causes some kind of camera error, restart button won't work
 				endScene.gameObject.SetActive(true);
 				restart.gameObject.SetActive(true);
+				losingLaugh.Play();
 				Camera.main.transform.parent = null;
 				gameIsOver = true;
 				//Destroy(gameObject); DESTOYS AMY ,BUT THEN CAN'T CLICK TO RESTART, W LOSE OBJECT I'M ASSUMMING
