@@ -14,9 +14,20 @@ public class Movement : MonoBehaviour
     private Animator animator;
     private Vector3 lastPosition;
 
+    public AudioSource steps;
+
+    public AudioSource[] sounds;
+
+
+
+    private void Step() {
+        steps.Play();
+    }
     // Start is called before the first frame update
     void Start()
     {
+        sounds = GetComponents<AudioSource>();
+        steps = sounds[0];
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         animator = GetComponent<Animator>();
         // https://stackoverflow.com/questions/40752083/how-to-find-child-of-a-gameobject-or-the-script-attached-to-child-gameobject-via
