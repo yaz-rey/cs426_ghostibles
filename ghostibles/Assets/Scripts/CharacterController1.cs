@@ -392,6 +392,7 @@ public class CharacterController1 : MonoBehaviour
 
 	public int playWin = 0;
 	public void PlayMusic(){
+		background.Stop();
 		while(playWin < 5){
 			winningMusic.Play();
 			playWin = playWin + 1;
@@ -426,6 +427,7 @@ public class CharacterController1 : MonoBehaviour
 				endScene.gameObject.SetActive(true);//Makie the end scene active once you die
 				restart.gameObject.SetActive(true);//Also the restart button
 				losingLaugh.Play();
+				background.Stop();
 				Camera.main.transform.parent = null;//Oh this fixes camera error, restart button suddenly works - who would of thought
 				gameIsOver = true;
 				//Destroy(gameObject);DESTOYS AMY ,BUT THEN CAN'T CLICK TO RESTART, WE LOSE OBJECT WITH THE SCRIPT'S CODE I'M ASSUMMING
