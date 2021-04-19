@@ -12,6 +12,9 @@ public class CharacterController1 : MonoBehaviour
 	public float rotationSpeed = 90;
 	public float force = 700f;
 
+	public int jumpCount = 0; 
+    public int maxJumps = 3;
+
 	public GameObject cannon;
 	public GameObject bullet;
 
@@ -34,7 +37,7 @@ public class CharacterController1 : MonoBehaviour
 	private 
 
 	// stun attack
-    float stunInterval = 1;
+    float stunInterval = 2;
     bool stun = false;
 
 	//Audio clips
@@ -118,6 +121,7 @@ public class CharacterController1 : MonoBehaviour
 	}
 	void Start()
 	{
+		jumpCount = maxJumps;
 		restart.onClick.AddListener(RestartButton);//Doesn't really work, but I left it!
 		replay.onClick.AddListener(RestartButton);
 		rb = GetComponent<Rigidbody>();
@@ -208,7 +212,10 @@ public class CharacterController1 : MonoBehaviour
 			}
 
 			if (Input.GetKeyDown(KeyCode.Space)){
-				rb.AddForce(t.up * force);
+				if (jumpCount > 0){
+				    rb.AddForce(t.up * force);
+				    jumpCount -= 1;
+				}
 			}
 
 			if (Input.GetButtonDown("Fire1") && weapon.Equals("gun")){
@@ -370,7 +377,7 @@ public class CharacterController1 : MonoBehaviour
             else{
                 Debug.Log("1 second elapsed - attack ghosts");
                 CheckGhosts(transform.position, 14);
-                stunInterval = 1;
+                stunInterval = 2;
 
 				//For music bar
 				musicCount = musicCount - 2;
@@ -392,6 +399,7 @@ public class CharacterController1 : MonoBehaviour
 
 	public int playWin = 0;
 	public void PlayMusic(){
+		background.Stop();
 		while(playWin < 5){
 			winningMusic.Play();
 			playWin = playWin + 1;
@@ -402,6 +410,7 @@ public class CharacterController1 : MonoBehaviour
 	// https://answers.unity.com/questions/862880/disable-jumping-more-than-once.html
     // Used tag to identity different grounds in which to allow jumping 
     private void OnCollisionEnter(Collision collision){
+    	jumpCount = maxJumps;
     	if (collision.gameObject.tag == "Mansion"){
     		if (background.isPlaying && background.clip != ambientMansion){
     			background.Stop();
@@ -426,6 +435,7 @@ public class CharacterController1 : MonoBehaviour
 				endScene.gameObject.SetActive(true);//Makie the end scene active once you die
 				restart.gameObject.SetActive(true);//Also the restart button
 				losingLaugh.Play();
+				background.Stop();
 				Camera.main.transform.parent = null;//Oh this fixes camera error, restart button suddenly works - who would of thought
 				gameIsOver = true;
 				//Destroy(gameObject);DESTOYS AMY ,BUT THEN CAN'T CLICK TO RESTART, WE LOSE OBJECT WITH THE SCRIPT'S CODE I'M ASSUMMING
