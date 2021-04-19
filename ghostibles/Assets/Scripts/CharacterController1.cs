@@ -101,12 +101,13 @@ public class CharacterController1 : MonoBehaviour
 	public BulletBar bulletBar;
 
 	public MusicBar musicBar;
+	public bool preventPlayingSong = false;
 
 	private bool fightingBoss = false;
 
 	//Timer for music playing, hopefully
-	private float timer = 0.0f;
-	private float waitTime = 1.0f;
+	float timer = 0;
+	float waitTime = 1;
 
 	//public event EventHandler lost;
 
@@ -306,22 +307,18 @@ public class CharacterController1 : MonoBehaviour
 				
                 // enable attack
                 Debug.Log("Enabled Attack");
-				stun = true; 
+				 
 
 				guitarClip = sounds[1];
-				guitarClip.Play();
+				//Allows playing as long musicCount didn't reach 0 or if the music bar is going up
+				if(!preventPlayingSong || musicCount > 0){
+					stun = true;
+					guitarClip.Play();
+				}
 				Debug.Log("Play Music");
 				// musicCount = musicCount - 2;
 				// musicBar.SetMusic(musicCount);
-				while(timer > waitTime && stun){
 
-					timer -= 1 * Time.deltaTime;//Subtract 1 second
-					musicCount = musicCount - 1;
-					musicBar.SetMusic(musicCount);//Subtract two seconds out of 8
-				}
-				if(musicCount == 0){
-					guitarClip.Stop();//Stop after 4 seconds elapse
-				}
 				
 
             }
@@ -334,19 +331,32 @@ public class CharacterController1 : MonoBehaviour
 			// 	if(musicCount == 0){
 			// 		guitarClip.Stop();//Stop after 4 seconds elapse
 			// 	}
-			
         
         }
-		// if(timer > waitTime && stun){
-
-		// 			timer -= 1 * Time.deltaTime;//Subtract 1 second
-		// 			musicCount = musicCount - 1;
-		// 			musicBar.SetMusic(musicCount);//Subtract two seconds out of 8
-		// 		}
 		// if(musicCount == 0){
+		// 	Debug.Log("MUSIC=Count = 0? " + musicCount);
 		// 		guitarClip.Stop();//Stop after 4 seconds elapse
 		// 	}
+		// if(timer > 0 && stun && musicCount > 0){
 
+		// 			timer -= Time.deltaTime;//Subtract 1 second
+		// 			Debug.Log("music-count " + musicCount);
+		// 			musicCount = musicCount - 2;
+		// 			musicBar.SetMusic(musicCount);//Subtract two seconds out of 8
+		// 		}
+		
+		if(!stun && musicCount <= 8 && preventPlayingSong){
+			if(timer > 0){
+				timer -= Time.deltaTime;
+			}
+			else{
+				timer = 1;
+				musicCount = musicCount + 2;
+				musicBar.SetMusic(musicCount);
+
+				if(musicCount == 8){preventPlayingSong = false;}
+			}
+		}
         if (stun){
         	anim.SetBool("Play", true);
             GetComponent<MeshRenderer>().material.color = Color.cyan;
@@ -361,6 +371,17 @@ public class CharacterController1 : MonoBehaviour
                 Debug.Log("1 second elapsed - attack ghosts");
                 CheckGhosts(transform.position, 14);
                 stunInterval = 1;
+
+				//For music bar
+				musicCount = musicCount - 2;
+				musicBar.SetMusic(musicCount);//Subtract two seconds out of 8
+
+				if(musicCount <= 0){
+					guitarClip.Stop(); 
+					preventPlayingSong = true;
+					stun = false;
+					
+				}//Stops playing once music bar reaches 0
             }
         }
         else{
