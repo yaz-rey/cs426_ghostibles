@@ -37,7 +37,7 @@ public class CharacterController1 : MonoBehaviour
 	private 
 
 	// stun attack
-    float stunInterval = 1;
+    float stunInterval = 2;
     bool stun = false;
 
 	//Audio clips
@@ -377,7 +377,7 @@ public class CharacterController1 : MonoBehaviour
             else{
                 Debug.Log("1 second elapsed - attack ghosts");
                 CheckGhosts(transform.position, 14);
-                stunInterval = 1;
+                stunInterval = 2;
 
 				//For music bar
 				musicCount = musicCount - 2;

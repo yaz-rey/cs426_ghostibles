@@ -9,7 +9,7 @@ public class IdleStateBehavior : StateMachineBehaviour
     {
     //    
         Target1 ghost = animator.gameObject.GetComponent<Target1>();    
-        ghost.ToggleWaiting();
+        ghost.StartWaiting();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -23,7 +23,7 @@ public class IdleStateBehavior : StateMachineBehaviour
     {
     //    
         Target1 ghost = animator.gameObject.GetComponent<Target1>();    
-        ghost.ToggleWaiting();
+        ghost.StopWaiting();
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

@@ -105,8 +105,11 @@ public class Target1 : MonoBehaviour
       private void FixedUpdate()
     {
         // this would trigger the attack state if ghost not stunned
-        if (!stunned){ 
-            anim.SetBool("playerInSight", inViewCone);
+        if (!stunned && inViewCone){ 
+            anim.SetBool("playerInSight", true);
+        }
+        else{
+            anim.SetBool("playerInSight", false);
         }
  
     }
@@ -135,6 +138,14 @@ public class Target1 : MonoBehaviour
       public void ToggleWaiting()
       {
           waiting  = !waiting;
+      }
+
+      public void StartWaiting(){
+        waiting = true;
+      }
+
+      public void StopWaiting(){
+        waiting = false;
       }
 
       public void StartStun()
@@ -194,6 +205,7 @@ public class Target1 : MonoBehaviour
 
      // https://docs.unity3d.com/ScriptReference/Color.html
     private void DecreaseImmunity(){
+        Debug.Log("AMY STUN received");
         // triggers state from character controller
         anim.SetTrigger("playerAttacked");
     }
