@@ -14545,24 +14545,8 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1895693148}
     m_Modifications:
-    - target: {fileID: 825566755, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 2447040901666344634, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
       propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2447040901666344634, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2447040901666344634, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2447040901666344634, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2447040901666344634, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
@@ -14610,10 +14594,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1119658300}
     - target: {fileID: 2773966412569504085, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: waypoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2773966412569504085, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 1584072931}
@@ -14621,137 +14601,12 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 456642259}
-    - target: {fileID: 2773966412569504085, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: waypoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 813386606}
-    - target: {fileID: 2773966412569504085, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: waypoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 1221436880}
-    - target: {fileID: 2773966412569504085, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: waypoints.Array.data[4]
-      value: 
-      objectReference: {fileID: 185988223}
-    - target: {fileID: 2773966412569504085, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: waypoints.Array.data[5]
-      value: 
-      objectReference: {fileID: 1716870781}
-    - target: {fileID: 2773966412569504085, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: waypoints.Array.data[6]
-      value: 
-      objectReference: {fileID: 1493592003}
-    - target: {fileID: 2773966412569504085, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-      propertyPath: waypoints.Array.data[7]
-      value: 
-      objectReference: {fileID: 1951522188}
     - target: {fileID: 3080024611234829312, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
       propertyPath: m_Name
       value: ghost_idle (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
---- !u!1 &1605783161 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3080024611234829312, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
-  m_PrefabInstance: {fileID: 1605783160}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1605783162
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605783161}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3c01ebf0a81bf4dcaa23268f8ae59114, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.2
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!4 &1605783168 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2447040901666344634, guid: 50ee8ce6a8b5c4a0db9a3e1f91be7910, type: 3}
@@ -27162,6 +27017,8 @@ MonoBehaviour:
   speed: 20
   rotationSpeed: 90
   force: 700
+  jumpCount: 0
+  maxJumps: 3
   cannon: {fileID: 884752484}
   bullet: {fileID: 2257571954719840422, guid: f2f5de87b63ef466ba1626aaa563b119, type: 3}
   bulletCount: 15
