@@ -16,6 +16,7 @@ public class CharacterController1 : MonoBehaviour
 	public GameObject bullet;
 
 	public int bulletCount = 10;
+	public int musicCount = 8;//For music bar: max value
 
 	Rigidbody rb;
 	Transform t;
@@ -99,7 +100,13 @@ public class CharacterController1 : MonoBehaviour
 
 	public BulletBar bulletBar;
 
+	public MusicBar musicBar;
+
 	private bool fightingBoss = false;
+
+	//Timer for music playing, hopefully
+	private float timer = 0.0f;
+	private float waitTime = 1.0f;
 
 	//public event EventHandler lost;
 
@@ -144,6 +151,8 @@ public class CharacterController1 : MonoBehaviour
 		healthBar.setMaxHealth(health);
 		// Sets maximum value for bullet bar
 		bulletBar.setMaxBullets(bulletCount);
+		//Sets maximum value for music bar
+		musicBar.SetMaxMusic(musicCount);
 	}
 
 	// Update is called once per frame
@@ -282,7 +291,7 @@ public class CharacterController1 : MonoBehaviour
 
 		// https://answers.unity.com/questions/797799/help-with-on-off-toggle-c.html
         if (Input.GetKeyDown(KeyCode.L) && weapon.Equals("instr")){
-			
+			timer = 4f;//Staart the timer
             if(stun){
                 // disable attack
                 Debug.Log("Disabled Attack");
@@ -294,6 +303,7 @@ public class CharacterController1 : MonoBehaviour
 
             }
             else{
+				
                 // enable attack
                 Debug.Log("Enabled Attack");
 				stun = true; 
@@ -301,9 +311,41 @@ public class CharacterController1 : MonoBehaviour
 				guitarClip = sounds[1];
 				guitarClip.Play();
 				Debug.Log("Play Music");
+				// musicCount = musicCount - 2;
+				// musicBar.SetMusic(musicCount);
+				while(timer > waitTime && stun){
+
+					timer -= 1 * Time.deltaTime;//Subtract 1 second
+					musicCount = musicCount - 1;
+					musicBar.SetMusic(musicCount);//Subtract two seconds out of 8
+				}
+				if(musicCount == 0){
+					guitarClip.Stop();//Stop after 4 seconds elapse
+				}
+				
+
             }
+			// if(timer > waitTime ){
+
+			// 		timer = timer - waitTime;//Subtract 1 second
+			// 		musicCount = musicCount - 2;
+			// 		musicBar.SetMusic(musicCount);//Subtract two seconds out of 8
+			// 	}
+			// 	if(musicCount == 0){
+			// 		guitarClip.Stop();//Stop after 4 seconds elapse
+			// 	}
+			
         
         }
+		// if(timer > waitTime && stun){
+
+		// 			timer -= 1 * Time.deltaTime;//Subtract 1 second
+		// 			musicCount = musicCount - 1;
+		// 			musicBar.SetMusic(musicCount);//Subtract two seconds out of 8
+		// 		}
+		// if(musicCount == 0){
+		// 		guitarClip.Stop();//Stop after 4 seconds elapse
+		// 	}
 
         if (stun){
         	anim.SetBool("Play", true);
