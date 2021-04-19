@@ -12,6 +12,9 @@ public class CharacterController1 : MonoBehaviour
 	public float rotationSpeed = 90;
 	public float force = 700f;
 
+	public int jumpCount = 0; 
+    public int maxJumps = 3;
+
 	public GameObject cannon;
 	public GameObject bullet;
 
@@ -118,6 +121,7 @@ public class CharacterController1 : MonoBehaviour
 	}
 	void Start()
 	{
+		jumpCount = maxJumps;
 		restart.onClick.AddListener(RestartButton);//Doesn't really work, but I left it!
 		replay.onClick.AddListener(RestartButton);
 		rb = GetComponent<Rigidbody>();
@@ -208,7 +212,10 @@ public class CharacterController1 : MonoBehaviour
 			}
 
 			if (Input.GetKeyDown(KeyCode.Space)){
-				rb.AddForce(t.up * force);
+				if (jumpCount > 0){
+				    rb.AddForce(t.up * force);
+				    jumpCount -= 1;
+				}
 			}
 
 			if (Input.GetButtonDown("Fire1") && weapon.Equals("gun")){
@@ -403,6 +410,7 @@ public class CharacterController1 : MonoBehaviour
 	// https://answers.unity.com/questions/862880/disable-jumping-more-than-once.html
     // Used tag to identity different grounds in which to allow jumping 
     private void OnCollisionEnter(Collision collision){
+    	jumpCount = maxJumps;
     	if (collision.gameObject.tag == "Mansion"){
     		if (background.isPlaying && background.clip != ambientMansion){
     			background.Stop();

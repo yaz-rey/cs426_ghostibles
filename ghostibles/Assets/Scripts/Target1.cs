@@ -62,7 +62,9 @@ public class Target1 : MonoBehaviour
         }
 
         if(!waiting){
-            transform.Translate(Vector3.forward * Time.deltaTime * 3);
+            Vector3 forward = transform.forward;
+            forward.y = 0.0f;
+            transform.Translate(forward * Time.deltaTime * 3, Space.World);
 
         }
 
@@ -124,7 +126,10 @@ public class Target1 : MonoBehaviour
     
       private void rotateGhost()
       {
-          transform.LookAt(playerTransform);
+        Vector3 pos = playerTransform.position;
+        pos.y = 0.0f;
+        //transform.Translate(forward * Time.deltaTime * 3, Space.World);
+        transform.LookAt(pos);
       }
     
       public void ToggleWaiting()
