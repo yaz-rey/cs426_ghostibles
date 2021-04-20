@@ -111,7 +111,7 @@ public class CharacterController1 : MonoBehaviour
 	//Timer for music playing, hopefully
 	float timer = 0;
 	float waitTime = 1;
-
+	public Material musicField;//https://www.youtube.com/watch?v=IQ7qnMv01Vs
 	//public event EventHandler lost;
 
 	// Start is called before the first frame update
@@ -132,7 +132,7 @@ public class CharacterController1 : MonoBehaviour
 		sounds = GetComponents<AudioSource>();
 		gunShot = sounds[0];
 		
-		
+		//musicField.SetColor("Color_f41dcbf5ce4e4", Color.white);
 		guitarClip = sounds[1];
 
 		audio = sounds[2];
@@ -316,6 +316,7 @@ public class CharacterController1 : MonoBehaviour
 				
 				guitarClip.Stop();
 				Debug.Log("Stop Music");
+				musicField.SetColor("Color_f41dcbf5ce4e46109e0abba8c903de3a", Color.white);//Turn music field back to white
 				//Disable animation
 
             }
@@ -323,6 +324,9 @@ public class CharacterController1 : MonoBehaviour
 				
                 // enable attack
                 Debug.Log("Enabled Attack");
+
+				//Turn music field to cyan when playing
+				musicField.SetColor("Color_f41dcbf5ce4e46109e0abba8c903de3a", new Color32(0x1B, 0xC6, 0xE2, 0xFF));//https://answers.unity.com/questions/1395578/how-can-i-use-hex-color.html
 				 
 
 				guitarClip = sounds[1];
@@ -396,6 +400,7 @@ public class CharacterController1 : MonoBehaviour
 					guitarClip.Stop(); 
 					preventPlayingSong = true;
 					stun = false;
+					musicField.SetColor("Color_f41dcbf5ce4e46109e0abba8c903de3a", Color.white);
 					
 				}//Stops playing once music bar reaches 0
             }

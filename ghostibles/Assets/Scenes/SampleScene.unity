@@ -29333,6 +29333,7 @@ MonoBehaviour:
   bulletBar: {fileID: 1438329303}
   musicBar: {fileID: 829153590}
   preventPlayingSong: 0
+  musicField: {fileID: 2100000, guid: 2af914a98381f41fdb27999ec07d3097, type: 2}
   playWin: 0
 --- !u!23 &919132147678998996
 MeshRenderer:
