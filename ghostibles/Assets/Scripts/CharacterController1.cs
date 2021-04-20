@@ -162,6 +162,15 @@ public class CharacterController1 : MonoBehaviour
 
 	// Update is called once per frame
 	void Update(){
+		if (Input.GetKeyDown(KeyCode.Return))
+        {
+        	GameObject start = GameObject.Find("StartScreen");
+        	if (start.active == true){
+        		start.SetActive(false);
+        	}
+
+            Debug.Log("Return key was pressed.");
+        }
 		if(!gameIsOver || !gameWon){
 			if (Input.GetKey(KeyCode.Alpha1)){
 				wiManager.ChooseGun();
