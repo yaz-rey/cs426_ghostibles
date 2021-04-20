@@ -1261,3 +1261,378 @@ Received Import Request.
 Start importing Assets/Prefab/candles/source/model/textures/default_AO.jpg using Guid(bca5c9ab8d3a949c7bb956395b4ff3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c3cdeb52bd9db4888562eceecb442d') in 0.016096 seconds
   Import took 0.022041 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004150 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.255 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2305 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 338.3 MB.
+System memory in use after: 338.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3057.
+Total: 3.235641 ms (FindLiveObjects: 0.530237 ms CreateObjectMapping: 0.194342 ms MarkObjects: 2.464326 ms  DeleteObjects: 0.045174 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003720 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.190 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2303 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 339.6 MB.
+System memory in use after: 339.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3059.
+Total: 5.634752 ms (FindLiveObjects: 0.753845 ms CreateObjectMapping: 0.366832 ms MarkObjects: 4.451922 ms  DeleteObjects: 0.058956 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004431 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.521 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2303 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 338.8 MB.
+System memory in use after: 339.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3061.
+Total: 4.332446 ms (FindLiveObjects: 0.706986 ms CreateObjectMapping: 0.269504 ms MarkObjects: 3.296048 ms  DeleteObjects: 0.056449 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 7517.836069 seconds.
+  path: Assets/Materials/Fire.mat
+  artifactKey: Guid(ff6471bb2cdb543139143479f3ff2b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Fire.mat using Guid(ff6471bb2cdb543139143479f3ff2b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c228d94c65ce435e9627a57c087968e') in 0.868733 seconds
+  Import took 0.911370 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002863 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.187 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2303 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 339.1 MB.
+System memory in use after: 339.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3099.
+Total: 5.221987 ms (FindLiveObjects: 0.754127 ms CreateObjectMapping: 0.296848 ms MarkObjects: 4.121237 ms  DeleteObjects: 0.047863 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000919 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.171 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2303 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 339.5 MB.
+System memory in use after: 339.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3101.
+Total: 3.995407 ms (FindLiveObjects: 0.543994 ms CreateObjectMapping: 0.207295 ms MarkObjects: 3.213565 ms  DeleteObjects: 0.028377 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 382.209261 seconds.
+  path: Assets/Prefab/Materials/Bullet.mat
+  artifactKey: Guid(80bad693c20a0485aaee9e7ecacf6ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Materials/Bullet.mat using Guid(80bad693c20a0485aaee9e7ecacf6ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db10ce86ad95abc89753c8c10c6f8ec1') in 0.334338 seconds
+  Import took 0.345129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Prefab/Materials/GEM2.mat
+  artifactKey: Guid(369e57662e57f4def9ebb9c94608642b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Materials/GEM2.mat using Guid(369e57662e57f4def9ebb9c94608642b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efdced5e42ee471d44a26f4ddde11daf') in 0.081622 seconds
+  Import took 0.089956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Prefab/Materials/M_Gem.mat
+  artifactKey: Guid(24cdcfa1628594b4fac86627436d38ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Materials/M_Gem.mat using Guid(24cdcfa1628594b4fac86627436d38ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '060f734e008acb9e0fbcca051541b962') in 0.052617 seconds
+  Import took 0.060562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 149.776184 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling.FBX
+  artifactKey: Guid(eec19559d74039540bc52e9d2915c748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling.FBX using Guid(eec19559d74039540bc52e9d2915c748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a255cf9f10d79a0468daf0bb119438dd') in 0.523923 seconds
+  Import took 0.578641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling2.mat
+  artifactKey: Guid(3b07b59aca1cd0647a8c39fb9d0f5b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling2.mat using Guid(3b07b59aca1cd0647a8c39fb9d0f5b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4514213b2ce4e358071f3d20035f77') in 0.057909 seconds
+  Import took 0.070144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling1.mat
+  artifactKey: Guid(02d2e118dc4a5b84bb4d1a44618e4b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling1.mat using Guid(02d2e118dc4a5b84bb4d1a44618e4b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7c2859e5930788981511b8e99ce3819') in 0.035281 seconds
+  Import took 0.044102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling_P5.FBX
+  artifactKey: Guid(67aef443fb666f641939e1369b1d72f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling_P5.FBX using Guid(67aef443fb666f641939e1369b1d72f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01aae6335ab22f1961dc1b3e6acf5bb') in 0.042776 seconds
+  Import took 0.050266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling_P4.FBX
+  artifactKey: Guid(f2458b5bf027b8749b57570c2e694792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling_P4.FBX using Guid(f2458b5bf027b8749b57570c2e694792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0779607e56a7a997fd2d05d23c2f2d') in 0.040570 seconds
+  Import took 0.047497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling_P3.FBX
+  artifactKey: Guid(fa3c36bc6bf272449a084c61d23d8433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling_P3.FBX using Guid(fa3c36bc6bf272449a084c61d23d8433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00cb8b74dfd8a778c547a17bdb6d34b8') in 0.042920 seconds
+  Import took 0.051194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling3.mat
+  artifactKey: Guid(53f9ad1d442e7824c87357efb5b03eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling3.mat using Guid(53f9ad1d442e7824c87357efb5b03eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df78f873f25b7cc220382dfc470cda87') in 0.045565 seconds
+  Import took 0.053831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling_P1.FBX
+  artifactKey: Guid(74cc09ec1d9bec943b7077720dce9ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling_P1.FBX using Guid(74cc09ec1d9bec943b7077720dce9ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfbe99a5e71c7d8071ccf0d0d941e506') in 0.033243 seconds
+  Import took 0.041140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling_P2.FBX
+  artifactKey: Guid(660a5aadbd857cf44b8c808638380733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling_P2.FBX using Guid(660a5aadbd857cf44b8c808638380733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1f3e9c852fdc5615b3b1a4cf635743') in 0.039211 seconds
+  Import took 0.046730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling_P3_2.FBX
+  artifactKey: Guid(1eb90daeccc287646bf0643faa58fa0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling_P3_2.FBX using Guid(1eb90daeccc287646bf0643faa58fa0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d88a1250827f3e7a9d9f6716d570f7') in 0.032893 seconds
+  Import took 0.040109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling_P3_1.FBX
+  artifactKey: Guid(bb5af019b0b7bea4e9cb238995af5877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling_P3_1.FBX using Guid(bb5af019b0b7bea4e9cb238995af5877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2a67602d6856f988165fb797f24b4a') in 0.032256 seconds
+  Import took 0.038775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling4.mat
+  artifactKey: Guid(79b721e3867ddcb4db05dc45049797d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling4.mat using Guid(79b721e3867ddcb4db05dc45049797d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304ba251e3699e6c0ee2b668be0eb75d') in 0.022028 seconds
+  Import took 0.029412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.699838 seconds.
+  path: Assets/Characters/Boss/Materials/Ch25_Body.mat
+  artifactKey: Guid(b3efff4c4c29c774a8e48ce653e21886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/Materials/Ch25_Body.mat using Guid(b3efff4c4c29c774a8e48ce653e21886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f32c01d615c1c98da7a7fcf763b732') in 0.042581 seconds
+  Import took 0.048313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Victorian Mansion/Floors/Cobblestone2.mat
+  artifactKey: Guid(bc1320be90137434da4c609db3b0ba11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Floors/Cobblestone2.mat using Guid(bc1320be90137434da4c609db3b0ba11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5368ccd810d0d541da7bedfc86fba7f') in 0.062156 seconds
+  Import took 0.069292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Characters/Boss/Materials/Ch25_body1.mat
+  artifactKey: Guid(cb9baf21ca930204f9feab01a49bf29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/Materials/Ch25_body1.mat using Guid(cb9baf21ca930204f9feab01a49bf29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc6bec30358f806dc88aa593f4a7893') in 0.053341 seconds
+  Import took 0.058653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Victorian Mansion/Furniture/Chair_1_Wood.mat
+  artifactKey: Guid(098c1ea7cfd1e004189f1474b6747b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Furniture/Chair_1_Wood.mat using Guid(098c1ea7cfd1e004189f1474b6747b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd505a2c0e6fc4f60681b12dcfa4a2e66') in 0.048121 seconds
+  Import took 0.054955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Characters/Amy/Materials/Ch46_body.mat
+  artifactKey: Guid(3f26bf5c7e7fa46a881eb973500bf86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Amy/Materials/Ch46_body.mat using Guid(3f26bf5c7e7fa46a881eb973500bf86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6a37c693dbb71a25ee88e280e7a7c82') in 0.023386 seconds
+  Import took 0.029772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Characters/Boss/Materials/Ch25_Body.mat
+  artifactKey: Guid(b3efff4c4c29c774a8e48ce653e21886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/Materials/Ch25_Body.mat using Guid(b3efff4c4c29c774a8e48ce653e21886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f32c01d615c1c98da7a7fcf763b732') in 0.021916 seconds
+  Import took 0.027227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Victorian Mansion/Floors/Cobblestone1.mat
+  artifactKey: Guid(1180352c98968b54dabc80b9a0e28786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Floors/Cobblestone1.mat using Guid(1180352c98968b54dabc80b9a0e28786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff7a527e249ea4b85adfa3a59b8b4d21') in 0.043115 seconds
+  Import took 0.049345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Victorian Mansion/Furniture/Chair_1_Cloth.mat
+  artifactKey: Guid(8ccea28bf4b000943832645da8cb23d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Furniture/Chair_1_Cloth.mat using Guid(8ccea28bf4b000943832645da8cb23d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e416abe795f712bde8205084b6d8d1') in 0.036167 seconds
+  Import took 0.042026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.349239 seconds.
+  path: Assets/Victorian Mansion/Ceiling/Ceiling_P3.FBX
+  artifactKey: Guid(fa3c36bc6bf272449a084c61d23d8433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Victorian Mansion/Ceiling/Ceiling_P3.FBX using Guid(fa3c36bc6bf272449a084c61d23d8433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4621314b09722bf448589f9fc473a97c') in 0.071459 seconds
+  Import took 0.086692 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001865 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.318 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2303 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 344.8 MB.
+System memory in use after: 345.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3139.
+Total: 2.905934 ms (FindLiveObjects: 0.487154 ms CreateObjectMapping: 0.173101 ms MarkObjects: 2.205967 ms  DeleteObjects: 0.038450 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007818 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.293 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2303 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 345.0 MB.
+System memory in use after: 345.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3141.
+Total: 2.839494 ms (FindLiveObjects: 0.438533 ms CreateObjectMapping: 0.101058 ms MarkObjects: 2.260998 ms  DeleteObjects: 0.036762 ms)
+
