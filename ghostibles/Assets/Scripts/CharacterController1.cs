@@ -108,6 +108,8 @@ public class CharacterController1 : MonoBehaviour
 
 	private bool fightingBoss = false;
 
+	private GameObject sphereField;
+
 	//Timer for music playing, hopefully
 	float timer = 0;
 	float waitTime = 1;
@@ -121,6 +123,8 @@ public class CharacterController1 : MonoBehaviour
 	}
 	void Start()
 	{
+		sphereField = transform.GetChild(5).gameObject;
+		sphereField.SetActive(false);
 		jumpCount = maxJumps;
 		restart.onClick.AddListener(RestartButton);//Doesn't really work, but I left it!
 		replay.onClick.AddListener(RestartButton);
@@ -315,7 +319,10 @@ public class CharacterController1 : MonoBehaviour
                 stun = false;
 				
 				guitarClip.Stop();
+
 				Debug.Log("Stop Music");
+				sphereField.SetActive(false);
+
 				musicField.SetColor("Color_f41dcbf5ce4e46109e0abba8c903de3a", Color.white);//Turn music field back to white
 				//Disable animation
 
@@ -326,8 +333,10 @@ public class CharacterController1 : MonoBehaviour
                 Debug.Log("Enabled Attack");
 
 				//Turn music field to cyan when playing
+				sphereField.SetActive(true);
 				musicField.SetColor("Color_f41dcbf5ce4e46109e0abba8c903de3a", new Color32(0x1B, 0xC6, 0xE2, 0xFF));//https://answers.unity.com/questions/1395578/how-can-i-use-hex-color.html
-				 
+				
+
 
 				guitarClip = sounds[1];
 				//Allows playing as long musicCount didn't reach 0 or if the music bar is going up
@@ -400,6 +409,7 @@ public class CharacterController1 : MonoBehaviour
 					guitarClip.Stop(); 
 					preventPlayingSong = true;
 					stun = false;
+					sphereField.SetActive(false);
 					musicField.SetColor("Color_f41dcbf5ce4e46109e0abba8c903de3a", Color.white);
 					
 				}//Stops playing once music bar reaches 0
