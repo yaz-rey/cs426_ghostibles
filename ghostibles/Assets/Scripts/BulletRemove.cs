@@ -5,6 +5,8 @@ using UnityEngine;
 public class BulletRemove : MonoBehaviour
 {
 	public float bulletLife = 3;
+
+    public Material disappearMaterial;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +21,17 @@ public class BulletRemove : MonoBehaviour
     	}
     	// once interval over, decrease immunity for ghost
     	else{
-    	    Destroy(gameObject);
+            // var renderer = gameObject.GetComponentInChildren<Renderer>();
+            // renderer.material = disappearMaterial;
+
+    	    // Invoke("KillEnemy", 0.5f);
+            Destroy(gameObject);
     	}
         
     }
+
+    // void KillEnemy()
+    // {
+    //     Destroy(gameObject);
+    // }
 }
