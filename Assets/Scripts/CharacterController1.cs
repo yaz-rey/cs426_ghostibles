@@ -12,10 +12,14 @@ public class CharacterController1 : MonoBehaviour
 	public float rotationSpeed = 90;
 	public float force = 700f;
 
+	public int jumpCount = 0; 
+    public int maxJumps = 3;
+
 	public GameObject cannon;
 	public GameObject bullet;
 
 	public int bulletCount = 10;
+	public int musicCount = 8;//For music bar: max value
 
 	Rigidbody rb;
 	Transform t;
@@ -30,10 +34,8 @@ public class CharacterController1 : MonoBehaviour
 
 	public int health = 100;
 
-	private 
-
 	// stun attack
-    float stunInterval = 1;
+    float stunInterval = 2;
     bool stun = false;
 
 	//Audio clips
@@ -50,6 +52,10 @@ public class CharacterController1 : MonoBehaviour
 	private bool doorOpening = false;
 
 	private bool hasGem = false;
+
+	private bool hasGem2 = false;
+
+	public int gemCount = 0;
 
 
 	//public BulletCount bulletManager;
@@ -87,20 +93,32 @@ public class CharacterController1 : MonoBehaviour
 	public Image endScene;
 	public Text gameOver;
 	public Button restart;
+	public Button exit;
 	public bool gameIsOver = false;
+	public Image endCredits;
 
 	//Won game scene, hopefully
 	public Image winScene;
 	public Text wonGame;
 	public Button replay;
+	public Button quit;
 	public bool gameWon = false;
 	
 	public HealthBar healthBar;
 
 	public BulletBar bulletBar;
 
+	public MusicBar musicBar;
+	public bool preventPlayingSong = false;
+
 	private bool fightingBoss = false;
 
+	private GameObject sphereField;
+
+	//Timer for music playing, hopefully
+	float timer = 0;
+	float waitTime = 1;
+	public Material musicField;//https://www.youtube.com/watch?v=IQ7qnMv01Vs
 	//public event EventHandler lost;
 
 	// Start is called before the first frame update
@@ -110,8 +128,13 @@ public class CharacterController1 : MonoBehaviour
 	}
 	void Start()
 	{
+		sphereField = transform.GetChild(5).gameObject;
+		sphereField.SetActive(false);
+		jumpCount = maxJumps;
 		restart.onClick.AddListener(RestartButton);//Doesn't really work, but I left it!
+		exit.onClick.AddListener(QuitButton);
 		replay.onClick.AddListener(RestartButton);
+		quit.onClick.AddListener(QuitButton);
 		rb = GetComponent<Rigidbody>();
 		t = GetComponent<Transform>();
 		anim = GetComponent<Animator>();
@@ -120,7 +143,7 @@ public class CharacterController1 : MonoBehaviour
 		sounds = GetComponents<AudioSource>();
 		gunShot = sounds[0];
 		
-		
+		//musicField.SetColor("Color_f41dcbf5ce4e4", Color.white);
 		guitarClip = sounds[1];
 
 		audio = sounds[2];
@@ -144,10 +167,21 @@ public class CharacterController1 : MonoBehaviour
 		healthBar.setMaxHealth(health);
 		// Sets maximum value for bullet bar
 		bulletBar.setMaxBullets(bulletCount);
+		//Sets maximum value for music bar
+		musicBar.SetMaxMusic(musicCount);
 	}
 
 	// Update is called once per frame
 	void Update(){
+		if (Input.GetKeyDown(KeyCode.Return))
+        {
+        	GameObject start = GameObject.Find("StartScreen");
+        	if (start.active == true){
+        		start.SetActive(false);
+        	}
+
+            Debug.Log("Return key was pressed.");
+        }
 		if(!gameIsOver || !gameWon){
 			if (Input.GetKey(KeyCode.Alpha1)){
 				wiManager.ChooseGun();
@@ -198,7 +232,10 @@ public class CharacterController1 : MonoBehaviour
 			}
 
 			if (Input.GetKeyDown(KeyCode.Space)){
-				rb.AddForce(t.up * force);
+				if (jumpCount > 0){
+				    rb.AddForce(t.up * force);
+				    jumpCount -= 1;
+				}
 			}
 
 			if (Input.GetButtonDown("Fire1") && weapon.Equals("gun")){
@@ -226,6 +263,15 @@ public class CharacterController1 : MonoBehaviour
 		//When player wins
 		if(Input.GetKeyDown(KeyCode.R) && gameWon){
 			RestartButton();
+		}
+		if(Input.GetKeyDown(KeyCode.Q) && health <= 0)
+		{
+			QuitButton();
+		}
+
+		if(Input.GetKeyDown(KeyCode.Q) && gameWon)
+		{
+			QuitButton();
 		}
 		if(gameWon){
 			//winningMusic.Play();
@@ -282,29 +328,80 @@ public class CharacterController1 : MonoBehaviour
 
 		// https://answers.unity.com/questions/797799/help-with-on-off-toggle-c.html
         if (Input.GetKeyDown(KeyCode.L) && weapon.Equals("instr")){
-			
+			timer = 4f;//Staart the timer
             if(stun){
                 // disable attack
                 Debug.Log("Disabled Attack");
                 stun = false;
 				
 				guitarClip.Stop();
+
 				Debug.Log("Stop Music");
+				sphereField.SetActive(false);
+
+				musicField.SetColor("Color_f41dcbf5ce4e46109e0abba8c903de3a", Color.white);//Turn music field back to white
 				//Disable animation
 
             }
             else{
+				
                 // enable attack
                 Debug.Log("Enabled Attack");
-				stun = true; 
+
+				//Turn music field to cyan when playing
+				sphereField.SetActive(true);
+				musicField.SetColor("Color_f41dcbf5ce4e46109e0abba8c903de3a", new Color32(0x1B, 0xC6, 0xE2, 0xFF));//https://answers.unity.com/questions/1395578/how-can-i-use-hex-color.html
+				
+
 
 				guitarClip = sounds[1];
-				guitarClip.Play();
+				//Allows playing as long musicCount didn't reach 0 or if the music bar is going up
+				if(!preventPlayingSong || musicCount > 0){
+					stun = true;
+					guitarClip.Play();
+				}
 				Debug.Log("Play Music");
+				// musicCount = musicCount - 2;
+				// musicBar.SetMusic(musicCount);
+
+				
+
             }
+			// if(timer > waitTime ){
+
+			// 		timer = timer - waitTime;//Subtract 1 second
+			// 		musicCount = musicCount - 2;
+			// 		musicBar.SetMusic(musicCount);//Subtract two seconds out of 8
+			// 	}
+			// 	if(musicCount == 0){
+			// 		guitarClip.Stop();//Stop after 4 seconds elapse
+			// 	}
         
         }
+		// if(musicCount == 0){
+		// 	Debug.Log("MUSIC=Count = 0? " + musicCount);
+		// 		guitarClip.Stop();//Stop after 4 seconds elapse
+		// 	}
+		// if(timer > 0 && stun && musicCount > 0){
 
+		// 			timer -= Time.deltaTime;//Subtract 1 second
+		// 			Debug.Log("music-count " + musicCount);
+		// 			musicCount = musicCount - 2;
+		// 			musicBar.SetMusic(musicCount);//Subtract two seconds out of 8
+		// 		}
+		
+		if(!stun && musicCount <= 8 && preventPlayingSong){
+			if(timer > 0){
+				timer -= Time.deltaTime;
+			}
+			else{
+				timer = 1;
+				musicCount = musicCount + 2;
+				musicBar.SetMusic(musicCount);
+
+				if(musicCount == 8){preventPlayingSong = false;}
+			}
+		}
         if (stun){
         	anim.SetBool("Play", true);
             GetComponent<MeshRenderer>().material.color = Color.cyan;
@@ -318,7 +415,20 @@ public class CharacterController1 : MonoBehaviour
             else{
                 Debug.Log("1 second elapsed - attack ghosts");
                 CheckGhosts(transform.position, 14);
-                stunInterval = 1;
+                stunInterval = 2;
+
+				//For music bar
+				musicCount = musicCount - 2;
+				musicBar.SetMusic(musicCount);//Subtract two seconds out of 8
+
+				if(musicCount <= 0){
+					guitarClip.Stop(); 
+					preventPlayingSong = true;
+					stun = false;
+					sphereField.SetActive(false);
+					musicField.SetColor("Color_f41dcbf5ce4e46109e0abba8c903de3a", Color.white);
+					
+				}//Stops playing once music bar reaches 0
             }
         }
         else{
@@ -329,6 +439,7 @@ public class CharacterController1 : MonoBehaviour
 
 	public int playWin = 0;
 	public void PlayMusic(){
+		background.Stop();
 		while(playWin < 5){
 			winningMusic.Play();
 			playWin = playWin + 1;
@@ -339,6 +450,7 @@ public class CharacterController1 : MonoBehaviour
 	// https://answers.unity.com/questions/862880/disable-jumping-more-than-once.html
     // Used tag to identity different grounds in which to allow jumping 
     private void OnCollisionEnter(Collision collision){
+    	jumpCount = maxJumps;
     	if (collision.gameObject.tag == "Mansion"){
     		if (background.isPlaying && background.clip != ambientMansion){
     			background.Stop();
@@ -362,7 +474,9 @@ public class CharacterController1 : MonoBehaviour
 				//Destroy(gameObject); Causes some kind of camera error, restart button won't work
 				endScene.gameObject.SetActive(true);//Makie the end scene active once you die
 				restart.gameObject.SetActive(true);//Also the restart button
+				quit.gameObject.SetActive(true);
 				losingLaugh.Play();
+				background.Stop();
 				Camera.main.transform.parent = null;//Oh this fixes camera error, restart button suddenly works - who would of thought
 				gameIsOver = true;
 				//Destroy(gameObject);DESTOYS AMY ,BUT THEN CAN'T CLICK TO RESTART, WE LOSE OBJECT WITH THE SCRIPT'S CODE I'M ASSUMMING
@@ -390,14 +504,20 @@ public class CharacterController1 : MonoBehaviour
 			
 			}
         }
+
 		if (collision.gameObject.tag == "Gem") {
-			fightingBoss = true;
+			if(gemCount == 1) {
+				fightingBoss = true;
+				hasGem = true;
+			}
+			
 			self.clip = laugh;
 			self.Play();
 			collis.clip = gemCollect;
 			collis.Play();
-			hasGem = true;
+			gemCount++;
 		}
+
 		if (collision.gameObject.tag == "Crystal"){
 			self.clip = laugh;
 			self.Play();
@@ -435,6 +555,18 @@ public class CharacterController1 : MonoBehaviour
 	{
 		SceneManager.LoadScene("SampleScene");
 	} 
+
+	public void QuitButton()
+	{
+		background.Stop();
+		winningMusic.Stop();
+		losingLaugh.Stop();
+		GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost");
+		foreach(GameObject ghost in ghosts){
+		   GameObject.Destroy(ghost);
+		}
+		endCredits.gameObject.SetActive(true);
+	}
 
     // https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html
     void CheckGhosts(Vector3 center, float radius)
