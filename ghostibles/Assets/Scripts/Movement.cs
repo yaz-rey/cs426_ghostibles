@@ -42,6 +42,10 @@ public class Movement : MonoBehaviour
     {
         if(player && player.HasGem())
         {
+            GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost");
+            foreach(GameObject ghost in ghosts)
+                GameObject.Destroy(ghost);
+                
             transform.GetChild(0).gameObject.GetComponent<Renderer>().enabled = true;
             agent.destination = player.gameObject.transform.position;
         }
