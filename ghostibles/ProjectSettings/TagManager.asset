@@ -17,6 +17,7 @@ TagManager:
   - Crystal
   - Floor
   - Mansion
+  - Gem2
   layers:
   - Default
   - TransparentFX

@@ -23,12 +23,12 @@ public class Goal : MonoBehaviour
         if (collision.gameObject.tag == "Player"){
             // https://answers.unity.com/questions/1143629/destroy-multiple-gameobjects-with-tag-c.html
             // destroy ghosts if only one gem left 
-            if(GameObject.FindGameObjectsWithTag("Gem").Length < 2) {
-                GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost");
-                foreach(GameObject ghost in ghosts){
-                   GameObject.Destroy(ghost);
-                }
-             }
+            // if(GameObject.FindGameObjectsWithTag("Gem").Length == 0) {
+            //     GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost");
+            //     foreach(GameObject ghost in ghosts){
+            //        GameObject.Destroy(ghost);
+            //     }
+            //  }
             scoreManager.AddPoint(100);
         	Destroy(gameObject);
         }

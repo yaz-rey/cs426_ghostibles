@@ -34,8 +34,6 @@ public class CharacterController1 : MonoBehaviour
 
 	public int health = 100;
 
-	private 
-
 	// stun attack
     float stunInterval = 2;
     bool stun = false;
@@ -54,6 +52,10 @@ public class CharacterController1 : MonoBehaviour
 	private bool doorOpening = false;
 
 	private bool hasGem = false;
+
+	private bool hasGem2 = false;
+
+	public int gemCount = 0;
 
 
 	//public BulletCount bulletManager;
@@ -502,14 +504,20 @@ public class CharacterController1 : MonoBehaviour
 			
 			}
         }
+
 		if (collision.gameObject.tag == "Gem") {
-			fightingBoss = true;
+			if(gemCount == 1) {
+				fightingBoss = true;
+				hasGem = true;
+			}
+			
 			self.clip = laugh;
 			self.Play();
 			collis.clip = gemCollect;
 			collis.Play();
-			hasGem = true;
+			gemCount++;
 		}
+
 		if (collision.gameObject.tag == "Crystal"){
 			self.clip = laugh;
 			self.Play();
