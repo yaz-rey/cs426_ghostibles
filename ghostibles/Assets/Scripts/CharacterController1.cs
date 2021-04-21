@@ -91,12 +91,15 @@ public class CharacterController1 : MonoBehaviour
 	public Image endScene;
 	public Text gameOver;
 	public Button restart;
+	public Button exit;
 	public bool gameIsOver = false;
+	public Image endCredits;
 
 	//Won game scene, hopefully
 	public Image winScene;
 	public Text wonGame;
 	public Button replay;
+	public Button quit;
 	public bool gameWon = false;
 	
 	public HealthBar healthBar;
@@ -127,7 +130,9 @@ public class CharacterController1 : MonoBehaviour
 		sphereField.SetActive(false);
 		jumpCount = maxJumps;
 		restart.onClick.AddListener(RestartButton);//Doesn't really work, but I left it!
+		exit.onClick.AddListener(QuitButton);
 		replay.onClick.AddListener(RestartButton);
+		quit.onClick.AddListener(QuitButton);
 		rb = GetComponent<Rigidbody>();
 		t = GetComponent<Transform>();
 		anim = GetComponent<Animator>();
@@ -256,6 +261,15 @@ public class CharacterController1 : MonoBehaviour
 		//When player wins
 		if(Input.GetKeyDown(KeyCode.R) && gameWon){
 			RestartButton();
+		}
+		if(Input.GetKeyDown(KeyCode.Q) && health <= 0)
+		{
+			QuitButton();
+		}
+
+		if(Input.GetKeyDown(KeyCode.Q) && gameWon)
+		{
+			QuitButton();
 		}
 		if(gameWon){
 			//winningMusic.Play();
@@ -458,6 +472,7 @@ public class CharacterController1 : MonoBehaviour
 				//Destroy(gameObject); Causes some kind of camera error, restart button won't work
 				endScene.gameObject.SetActive(true);//Makie the end scene active once you die
 				restart.gameObject.SetActive(true);//Also the restart button
+				quit.gameObject.SetActive(true);
 				losingLaugh.Play();
 				background.Stop();
 				Camera.main.transform.parent = null;//Oh this fixes camera error, restart button suddenly works - who would of thought
@@ -532,6 +547,11 @@ public class CharacterController1 : MonoBehaviour
 	{
 		SceneManager.LoadScene("SampleScene");
 	} 
+
+	public void QuitButton()
+	{
+		endCredits.gameObject.SetActive(true);
+	}
 
     // https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html
     void CheckGhosts(Vector3 center, float radius)
