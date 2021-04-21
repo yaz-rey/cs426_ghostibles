@@ -1,7 +1,7 @@
 
 # Ghostibles
 **IMPORTANT NOTE: The updated Output files are located under the Beta release tag. The assets are updated in the branch**
-## Design Update
+## Alpha Release Design Update
 * We introduced new resources for the player, which are minor gems. These are  dispersed across the map as well as protected by ghosts. They provide additional health. This aids the character prior to encountering the boss. 
 * Ghosts now have designated areas in which they are patrolling. There are 7 areas that have at least one ghost. This indicates more ghosts as well as more waypoints that ghosts use to patrol. This increases the difficulty of the game as well as creates a cohesive environment where ghosts are limited to areas. 
 * There is an additional way to collect ammunition outside of destroyed ghosts. These are also dispersed across the map as well as protected by ghosts. This aids the character prior to encountering the boss. 
