@@ -171,6 +171,10 @@ public class Target1 : MonoBehaviour
                 ProvidePoint();
                 break;
             case "Player":
+                int health = collision.gameObject.GetComponent<CharacterController1>().health;
+                if (health <= 0){
+                    GetComponent<AudioSource>().volume = 0.0f;
+                }
                 print("TAG " + collision.gameObject.tag);
                 break;
             default:
