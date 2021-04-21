@@ -558,6 +558,13 @@ public class CharacterController1 : MonoBehaviour
 
 	public void QuitButton()
 	{
+		background.Stop();
+		winningMusic.Stop();
+		losingLaugh.Stop();
+		GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost");
+		foreach(GameObject ghost in ghosts){
+		   GameObject.Destroy(ghost);
+		}
 		endCredits.gameObject.SetActive(true);
 	}
 
